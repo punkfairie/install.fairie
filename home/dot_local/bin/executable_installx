@@ -390,8 +390,10 @@ async function installPackages(pkgInstructions) {
     process.env.DEBUG && console.log('Queued installs:', promises)
     // const installs = await Promise.allSettled(promises)
 
+    let installs = []
     for (const cmd of promises) {
-      await cmd
+      const res = await cmd
+      installs.push(res)
     }
 
     log(`All of the installations have finished`)
