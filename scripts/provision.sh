@@ -21,7 +21,7 @@
 #     | **Task**           | Task runner used on-device for task parallelization and dependency management        |
 #     | **ZX / Node.js**   | ZX is a Node.js abstraction that allows for better scripts                           |
 #     | Gum                | Gum is a terminal UI prompt CLI (which allows sweet, interactive prompts)            |
-#     | Glow               | Glow is a markdown renderer used for applying terminal-friendly styles to markdown   |
+#     | Glow               | Glow is a markdown renderer used for applying terminal-friendly styled to markdown   |
 #
 #     There are also a handful of system packages that are installed like `curl` and `git`. Then, during the Chezmoi provisioning
 #     process, there are a handful of system packages that are installed to ensure things run smoothly. You can find more details
@@ -606,7 +606,7 @@ cloneChezmoiSourceRepo() {
     if ! git config --get http.postBuffer > /dev/null; then
       logg info 'Setting git http.postBuffer value high for large source repository' && git config http.postBuffer 524288000
     fi
-    logg info "Pulling the latest changes in ${XDG_DATA_HOME:-$HOME/.local/share}/chezmoi" && git pull origin master
+    logg info "Pulling the latest changes in ${XDG_DATA_HOME:-$HOME/.local/share}/chezmoi" && git pull
   else
     logg info "Ensuring ${XDG_DATA_HOME:-$HOME/.local/share} is a folder" && mkdir -p "${XDG_DATA_HOME:-$HOME/.local/share}"
     logg info "Cloning ${START_REPO} to ${XDG_DATA_HOME:-$HOME/.local/share}/chezmoi" && git clone "${START_REPO}" "${XDG_DATA_HOME:-$HOME/.local/share}/chezmoi"
@@ -754,8 +754,8 @@ provisionLogic() {
   logg info "Handling Qubes dom0 logic (if applicable)" && handleQubesDom0
   logg info "Handling pre-provision logic" && initChezmoiAndPrompt
   logg info "Running the Chezmoi provisioning" && runChezmoi
-  logg info "Ensuring temporary passwordless sudo is removed" && removePasswordlessSudo
   logg info "Determing whether or not reboot" && handleRequiredReboot
+  logg info "Ensuring temporary passwordless sudo is removed" && removePasswordlessSudo
   logg info "Handling post-provision logic" && postProvision
 }
 provisionLogic
