@@ -12,6 +12,7 @@
     "author": "",
     "license": "MIT",
     "dependencies": {
-      "linux-os-info": "2.0.0"
+      "linux-os-info": "2.0.0",
+      "async": "3.2.6"
     }
   }
