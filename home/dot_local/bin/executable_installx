@@ -1,6 +1,6 @@
 #!/usr/bin/env zx
 import osInfo from 'linux-os-info'
-import parallelLimit from 'async/parallelLimit'
+import { parallelLimit } from 'async'
 
 $.verbose = false
 // Preserves color from subshells
