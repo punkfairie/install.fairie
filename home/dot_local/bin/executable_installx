@@ -1,5 +1,6 @@
 #!/usr/bin/env zx
 import osInfo from 'linux-os-info'
+import parallelLimit from 'async/parallelLimit'
 
 $.verbose = false
 // Preserves color from subshells
@@ -387,7 +388,8 @@ async function installPackages(pkgInstructions) {
     }
     log(`Performing ${promises.length} installations`)
     process.env.DEBUG && console.log('Queued installs:', promises)
-    const installs = await Promise.allSettled(promises)
+    # const installs = await Promise.allSettled(promises)
+    const installs = await prallelLimit(promises, 5)
     log(`All of the installations have finished`)
     process.env.DEBUG && console.log('Completed installs:', installs)
     await postInstall(combined)
