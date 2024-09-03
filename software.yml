@@ -4122,9 +4122,8 @@ softwarePackages:
     _desc: "Manage your default applications with ease using handlr!"
     _docs: https://github.com/chmln/handlr#usage
     _github: https://github.com/chmln/handlr
-    _home: https://github.com/chmln/handlr
     _name: Handlr
-    cargo: handlr --locked
+    cargo: handlr
     yay: handlr-bin
   haproxy:
     _bin: haproxy
