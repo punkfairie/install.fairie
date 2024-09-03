@@ -1,6 +1,6 @@
 #!/usr/bin/env zx
 import osInfo from 'linux-os-info'
-import { parallelLimit } from 'async'
+import { Queue } from 'modern-async'
 
 $.verbose = false
 // Preserves color from subshells
@@ -275,6 +275,8 @@ async function forEachSeries(iterable) {
 }
 
 async function installPackages(pkgInstructions) {
+    const queue = new Queue(3)
+
     const combined = {}
     const promises = []
     log(`Populating install order lists`)
@@ -286,7 +288,9 @@ async function installPackages(pkgInstructions) {
     }
     log(`Running Homebrew installation via Brewfile`)
     if ((combined.brew && combined.brew.length) || (combined.cask && combined.cask.length)) {
-        promises.push(bundleInstall(combined.brew ? combined.brew.flatMap(x => x.installList.flatMap(i => i)) : [], combined.cask ? combined.cask.flatMap(x => x.installList.flatMap(i => i)) : [], combined.cask))
+        promises.push(queue.exec(async () => {
+            await bundleInstall(combined.brew ? combined.brew.flatMap(x => x.installList.flatMap(i => i)) : [], combined.cask ? combined.cask.flatMap(x => x.installList.flatMap(i => i)) : [], combined.cask)
+        }))
     }
     for (const key of Object.keys(combined)) {
         if (key !== 'script') {
@@ -294,24 +298,32 @@ async function installPackages(pkgInstructions) {
         }
         switch (key) {
             case 'ansible':
-                promises.push(forEachSeries(combined[key].flatMap(x => x.installList.flatMap(i => $`${key} 127.0.0.1 -v${process.env.DEBUG && 'vv'} -e '{ ansible_connection: "local", ansible_become_user: "root", ansible_user: "${process.env.USER}", ansible_family: "${osId.charAt(0).toUpperCase() + osId.slice(1)}", install_homebrew: False }' -m include_role -a name=${i}`))))
+                promises.push(
+                    forEachSeries(combined[key].flatMap(x => x.installList.flatMap(i => queue.exec(async () => {
+                        await $`${key} 127.0.0.1 -v${process.env.DEBUG && 'vv'} -e '{ ansible_connection: "local", ansible_become_user: "root", ansible_user: "${process.env.USER}", ansible_family: "${osId.charAt(0).toUpperCase() + osId.slice(1)}", install_homebrew: False }' -m include_role -a name=${i}`
+                    }))))
+                )
                 break
             case 'apk':
-                promises.push($`sudo ${key} add ${combined[key].flatMap(x => x.installList).split(' ')}`)
+                promises.push(queue.exec(async () => {
+                  await $`sudo ${key} add ${combined[key].flatMap(x => x.installList).split(' ')}`
+                }))
                 break
             case 'appimage':
                 promises.push(...combined[key].flatMap(x => x.installList.flatMap(i => {
                     if (x.substring(0, 4) === 'http') {
-                        return $`zap install --select-first -q --from ${i}`
+                        return queue.exec(async () => { await $`zap install --select-first -q --from ${i}` })
                     } else if ((x.match(/\//g) || []).length === 1) {
-                        return $`zap install --select-first -q --github --from ${i}`
+                        return queue.exec(async () => { await $`zap install --select-first -q --github --from ${i}` })
                     } else {
-                        return $`zap install --select-first -q ${i}`
+                        return queue.exec(async () => { $`zap install --select-first -q ${i}` })
                     }
                 })))
                 break
             case 'apt':
-                promises.push($`DEBIAN_FRONTEND=noninteractive sudo apt-get -o DPkg::Options::=--force-confdef install -y ${combined[key].flatMap(x => x.installList).split(' ')}`)
+                promises.push(queue.exec(async () => {
+                    await $`DEBIAN_FRONTEND=noninteractive sudo apt-get -o DPkg::Options::=--force-confdef install -y ${combined[key].flatMap(x => x.installList).split(' ')}`
+                }))
                 break
             case 'basher':
             case 'baulk':
@@ -323,29 +335,47 @@ async function installPackages(pkgInstructions) {
             case 'pipx':
             case 'scoop': // Maybe needs forEachSeries
             case 'winget': // Maybe needs forEachSeries
-                promises.push(...combined[key].flatMap(x => x.installList.flatMap(i => $`${key} install ${i}`)))
+                promises.push(
+                    ...combined[key].flatMap(x => x.installList.flatMap(i => queue.exec(async () => {
+                        await $`${key} install ${i}`
+                    })))
+                )
                 break
             case 'npm':
-                promises.push(...combined[key].flatMap(x => x.installList.flatMap(i => $`volta install ${i}`)))
+                promises.push(
+                    ...combined[key].flatMap(x => x.installList.flatMap(i => queue.exec(async () => {
+                        await $`volta install ${i}`
+                    })))
+                )
                 break
             case 'binary':
                 // TODO
-                promises.push(...combined[key].flatMap(x => x.installList.flatMap(i => $`TMP="$(mktemp)" && curl -sSL ${i} > "$TMP" && sudo mv "$TMP" /usr/local/src/${x._bin} && chmod +x /usr/local/src/${x._bin}`)))
+                promises.push(
+                    ...combined[key].flatMap(x => x.installList.flatMap(i => queue.exec(async () => {
+                        await $`TMP="$(mktemp)" && curl -sSL ${i} > "$TMP" && sudo mv "$TMP" /usr/local/src/${x._bin} && chmod +x /usr/local/src/${x._bin}`
+                    })))
+                )
                 break
             case 'brew':
             case 'cask': // Handled above
                 break
             case 'choco':
-                promises.push($`${key} install -y ${combined[key].flatMap(x => x.installList).join(' ')}`)
+                promises.push(queue.exec(async () => {
+                    await $`${key} install -y ${combined[key].flatMap(x => x.installList).join(' ')}`
+                }))
                 break
             case 'dnf':
             case 'yum':
             case 'zypper':
-                promises.push($`sudo ${key} install -y ${combined[key].flatMap(x => x.installList).join(' ')}`)
+                promises.push(queue.exec(async () => {
+                    await $`sudo ${key} install -y ${combined[key].flatMap(x => x.installList).join(' ')}`
+                }))
                 break
             case 'emerge':
             case 'pkg_add':
-                promises.push($`sudo ${key} ${combined[key].flatMap(x => x.installList).join(' ')}`)
+                promises.push(queue.exec(async () => {
+                    await $`sudo ${key} ${combined[key].flatMap(x => x.installList).join(' ')}`
+                }))
                 break
             case 'eopkg':
             case 'pkg-freebsd':
@@ -353,10 +383,14 @@ async function installPackages(pkgInstructions) {
             case 'pkgin':
             case 'port':
             case 'snap': // TODO - snap testing.. combine with snap-classic and add appropriate logic
-                promises.push($`sudo ${key === 'pkg-freebsd' || key === 'pkg-termux' ? 'pkg' : key} install ${combined[key].flatMap(x => x.installList).join(' ')}`)
+                promises.push(queue.exec(async () => {
+                    await $`sudo ${key === 'pkg-freebsd' || key === 'pkg-termux' ? 'pkg' : key} install ${combined[key].flatMap(x => x.installList).join(' ')}`
+                }))
                 break
             case 'flatpak':
-                promises.push(forEachSeries(combined[key].flatMap(x => x.installList.flatMap(i => $`sudo ${key} install -y flathub ${i}`))))
+                promises.push(queue.exec(async () => {
+                    await forEachSeries(combined[key].flatMap(x => x.installList.flatMap(i => $`sudo ${key} install -y flathub ${i}`)))
+                }))
                 break
             case 'github': // TODO
                 break
@@ -365,22 +399,30 @@ async function installPackages(pkgInstructions) {
             case 'nix-shell': // TODO
                 break
             case 'pacman':
-                promises.push($`sudo ${key} -Sy --noconfirm --needed ${combined[key].flatMap(x => x.installList).join(' ')}`)
+                promises.push(queue.exec(async () => {
+                    await $`sudo ${key} -Sy --noconfirm --needed ${combined[key].flatMap(x => x.installList).join(' ')}`
+                }))
                 break
             case 'pkg-darwin':
                 break
             case 'sbopkg': // TODO
                 break
             case 'script':
-                promises.push(...combined[key].flatMap(x => x.installList.flatMap(i => runScript(x.listKey, i))))
+                promises.push(
+                    ...combined[key].flatMap(x => x.installList.flatMap(i => queue.exec(async () => await runScript(x.listKey, i))))
+                )
                 break
             case 'whalebrew': // TODO
                 break
             case 'xbps':
-                promises.push($`sudo xbps-install -S ${combined[key].flatMap(x => x.installList).join(' ')}`)
+                promises.push(queue.exec(async () => {
+                    await $`sudo xbps-install -S ${combined[key].flatMap(x => x.installList).join(' ')}`
+                }))
                 break
             case 'yay':
-                promises.push($`yay -Sy --noconfirm --needed ${combined[key].flatMap(x => x.installList).join(' ')}`)
+                promises.push(queue.exec(async () => {
+                    await $`yay -Sy --noconfirm --needed ${combined[key].flatMap(x => x.installList).join(' ')}`
+                }))
                 break
             default:
                 log(`Unable to find install key instructions for ${key}`)
@@ -388,14 +430,7 @@ async function installPackages(pkgInstructions) {
     }
     log(`Performing ${promises.length} installations`)
     process.env.DEBUG && console.log('Queued installs:', promises)
-    // const installs = await Promise.allSettled(promises)
-
-    let installs = []
-    for (const cmd of promises) {
-      const res = await cmd
-      installs.push(res)
-    }
-
+    const insalls = await Promise.allSettled(promises)
     log(`All of the installations have finished`)
     process.env.DEBUG && console.log('Completed installs:', installs)
     await postInstall(combined)

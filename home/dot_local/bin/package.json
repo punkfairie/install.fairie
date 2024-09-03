@@ -13,6 +13,6 @@
     "license": "MIT",
     "dependencies": {
       "linux-os-info": "2.0.0",
-      "async": "3.2.6"
+      "modern-async": "2.0.0"
     }
   }
