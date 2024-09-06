@@ -1,0 +1,149 @@
+---
+softwarePackages:
+  hyfetch:
+    _bin: hyfetch
+    _desc: "neofetch with pride flags <3"
+    _github: https://github.com/hykilpikonna/hyfetch
+    _name: hyfetch
+    pipx: hyfetch
+    pacman: hyfetch
+    dnf: hyfetch
+    nix-env: hyfetch
+    brew: hyfetch
+    zypper: hyfetch
+    apt: hyfetch
+    port: hyfetch
+    emerge: hyfetch
+  vesktop:
+    _bin: vesktop
+    _desc: >
+      Vesktop is a custom Discord App aiming to give you better performance and
+      improve linux support
+    _github: https://github.com/Vencord/Vesktop
+    _name: Vesktop
+    flatpak: dev.vencord.Vesktop
+    appimage: https://vencord.dev/download/vesktop/amd64/appimage
+    yay: vesktop-bin
+    scoop: extras/vesktop
+    dmg: https://vencord.dev/download/vesktop/universal/dmg
+    apt: https://vencord.dev/download/vesktop/amd64/deb
+    script:darwin: >-
+      curl -sSL https://vencord.dev/download/vesktop/universal/dmg >
+      "/tmp/Vesktop.dmg"
+      && sudo hdiutil attach "/tmp/Vesktop.dmg"
+      && sudo cp -R "/Volumes/Vesktop 1.5.3-universal/Vesktop.app" /Applications
+      && sudo hdutil detach "/Volumes/Vesktop 1.5.3-universal"
+      && rm -rf "/tmp/Vesktop.dmg"
+  fish-shell:
+    _bin: fish
+    _desc: >
+      fish is a smart and user-friendly command line shell for Linux, macOS, and
+      the rest of the family.
+    _github: https://github.com/fish-shell/fish-shell
+    _home: https://fishshell.com/
+    _name: fish shell
+    brew: fish
+    port: fish
+    dnf: fish
+    pacman: fish
+    emerge: fish
+    nix-env: fish
+  rectangle:
+    _bin: null
+    _desc: "Move and resize windows using keyboard shortcuts or snap areas"
+    _home: https://rectangleapp.com/
+    _name: Rectangle
+    cask: rectangle
+  wezterm:
+    _bin: wezterm
+    _desc: >
+      WezTerm is a powerful cross-platform terminal emulator and multiplexer
+      written by @wez and implemented in Rust
+    _github: https://github.com/wez/wezterm
+    _home: https://wezfurlong.org/wezterm/
+    _name: WezTerm
+    winget: wez.wezterm
+    scoop: extras/wezterm
+    choco: wezterm
+    cask: wezterm
+    port: wezterm
+    appimage: wezterm
+    zypper: wezterm
+    pacman: wezterm
+  fantastical:
+    _bin: null
+    _desc: >
+      Fantastical, the calendar app you won't be able to live without.
+      Quickly create new events and reminders with natural language input and
+      more. Flexibits makes Fantastical and Cardhop, enjoyable calendar and
+      contacts apps for for Mac, iPhone, and iPad.
+    _github: false
+    _home: https://flexibits.com/fantastical
+    _name: Fantastical
+    cask: fantastical
+  cardhop:
+    _bin: null
+    _desc: >
+      Presenting Cardhop, the contacts app you'll actually want to use. Search,
+      add, edit, and interact with your contacts while still having fun.
+      Flexibits makes Fantastical and Cardhop, enjoyable calendar and contacts
+      apps for for Mac, iPhone, and iPad.
+    _github: false
+    _home: https://flexibits.com/cardhop
+    _name: Cardhop
+    cask: cardhop
+  btop:
+    _bin: btop
+    _desc: >
+      Resource monitor that shows usage and stats for processor, memory, disks,
+      network and processes.
+    _github: https://github.com/aristocratos/btop
+    _name: btop
+    dnf: btop
+    brew: btop
+    pacman: btop
+    port: btop
+    scoop: btop
+    apt: btop
+  httpie-desktop:
+    _bin: null
+    _desc: >
+      HTTPie Desktop is a cross-platform API testing client for humans. Use it
+      to test REST, GraphQL, and HTTP APIs painlessly.
+    _docs: https://httpie.io/docs/desktop/httpie-web
+    _github: https://github.com/httpie/desktop
+    _home: https://httpie.io/desktop
+    cask: httpie
+    yay: httpie-desktop-bin
+    choco: httpie-desktop
+    appimage: https://github.com/httpie/desktop/releases/download/v2024.1.2/HTTPie-2024.1.2.AppImage
+    exe: https://github.com/httpie/desktop/releases/download/v2024.1.2/HTTPie-Setup-2024.1.2.exe
+  topgrade:
+    _bin: topgrade
+    _desc: "Upgrade all the things"
+    _github: https://github.com/topgrade-rs/topgrade
+    yay: topgrade-bin
+    choco: topgrade
+    cargo: topgrade
+    brew: topgrade
+    port: topgrade
+    scoop: topgrade
+  adium:
+    _bin: null
+    _app: Adium.app
+    _desc: >
+      Adium is an open source and free instant messaging application for macOS
+      that can connect to XMPP (Jabber), IRC and more.
+    _github: https://github.com/adium/adium
+    _home: https://adium.im/
+    cask: adium
+  pidgin:
+    _bin: pidgin
+    _desc: >
+      Pidgin is a chat program which lets you log into accounts on multiple chat
+      networks simultaneously.
+    _home: https://pidgin.im/
+    pacman: pidgin
+    choco: pidgin
+    apt: pidgin
+    dnf: pidgin

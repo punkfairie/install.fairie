@@ -3540,6 +3540,7 @@ softwarePackages:
     _desc: "A gitmoji interactive cli tool for using emojis on commits. 💻"
     _github: https://github.com/carloscuesta/gitmoji-cli
     _name: Gitmoji CLI
+    npm: gitmoji-cli
     brew: gitmoji
     npm: gitmoji-cli
   gitomatic:
@@ -4121,8 +4122,9 @@ softwarePackages:
     _desc: "Manage your default applications with ease using handlr!"
     _docs: https://github.com/chmln/handlr#usage
     _github: https://github.com/chmln/handlr
+    _home: https://github.com/chmln/handlr
     _name: Handlr
-    cargo: handlr
+    cargo: handlr --locked
     yay: handlr-bin
   haproxy:
     _bin: haproxy
@@ -6332,7 +6334,7 @@ softwarePackages:
     _desc: "NativeScript empowers you to access native APIs from JavaScript directly."
     _github: https://github.com/NativeScript/NativeScript
     _name: NativeScript
-    npm: "@nativescript/core"
+    npm: nativescript --ignore-scripts
   nautilus-brasero:
     _github: false
     apt: nautilus-extension-brasero

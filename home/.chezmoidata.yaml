@@ -47,90 +47,96 @@ figmaAddons:
   - https://www.figma.com/community/plugin/1056467900248561542/Locofy-FREE-BETA---Figma-to-React%2C-React-Native%2C-HTML%2FCSS%2C-Next.js%2C-Gatsby
 chromeExtensionsDisabled:
   - buster-captcha-solver-for/mpbjkejclgfgadiemmefgebjfooflfhl
-  - chatgpt-app-for-chrome-me/camppjleccjaphfdbohjdohecfnoikec
-  - chatgpt-for-google/jgjaeacdkonaoafenlfkkkmbaopkbilf
-  - compose-ai-ai-powered-wri/ddlbpiadoechcolndfeaonajmngmhblj
-  - headless-recorder/djeegiggegleadkkbgopoonhjimgehda
-  - hoppscotch-browser-extens/amknoiejhlmhancpahfcfcfhllgkpbld
-  - jiffy-reader/lljedihjnnjjefafchaljkhbpfhfkdic
-  - liner-chatgpt-google-assi/bmhcbmnbenmcecpmpepghooflbehcack
-  - loom-–-screen-recorder-sc/liecbddmkiiihnedobmlmillhodjkdmb
-  - replixai/nhfededlooagdmcpamafanjolhkekbbl
+  # - chatgpt-app-for-chrome-me/camppjleccjaphfdbohjdohecfnoikec
+  # - chatgpt-for-google/jgjaeacdkonaoafenlfkkkmbaopkbilf
+  # - compose-ai-ai-powered-wri/ddlbpiadoechcolndfeaonajmngmhblj
+  # - headless-recorder/djeegiggegleadkkbgopoonhjimgehda
+  # - hoppscotch-browser-extens/amknoiejhlmhancpahfcfcfhllgkpbld
+  # - jiffy-reader/lljedihjnnjjefafchaljkhbpfhfkdic
+  # - liner-chatgpt-google-assi/bmhcbmnbenmcecpmpepghooflbehcack
+  # - loom-–-screen-recorder-sc/liecbddmkiiihnedobmlmillhodjkdmb
+  # - replixai/nhfededlooagdmcpamafanjolhkekbbl
 chromeExtensions:
-  - ai-based-grammar-checker/oldceeleldhonbafppcapldpdifcinji
+  # - ai-based-grammar-checker/oldceeleldhonbafppcapldpdifcinji
   - automa/infppggnoaenmfagbfknfkancpbljcca
-  - bardeen-automate-manual-w/ihhkmalpkhkoedlmcnilbbhhbhnicjga
+  # - bardeen-automate-manual-w/ihhkmalpkhkoedlmcnilbbhhbhnicjga
   - bitly-powerful-short-link/iabeihobmhlgpkcgjiloemdbofjbdcic
   - bitwarden-free-password-m/nngceckbapebfimnlniiiahkandclblb
-  - briskine-email-templates/lmcngpkjkplipamgflhioabnhnopeabf
-  - buffer/noojglkidnpfjbincgijbaiedldjfbhh
-  - chrome-remote-desktop/inomeogfingihgjfjlpeplalcfajhgai
-  - desktop-app-for-google-ta/lpofefdiokgmcdnnaigddelnfamkkghi
-  - discoverly/dijhcpbkalfgkcebgoncjmfpbamihgaf
+  # - briskine-email-templates/lmcngpkjkplipamgflhioabnhnopeabf
+  # - buffer/noojglkidnpfjbincgijbaiedldjfbhh
+  # - chrome-remote-desktop/inomeogfingihgjfjlpeplalcfajhgai
+  # - desktop-app-for-google-ta/lpofefdiokgmcdnnaigddelnfamkkghi
+  # - discoverly/dijhcpbkalfgkcebgoncjmfpbamihgaf
   - emoji-keyboard-by-joypixe/ipdjnhgkpapgippgcgkfcbpdpcgifncb
-  - falcon/mmifbbohghecjloeklpbinkjpbplfalb
-  - floccus-bookmarks-sync/fnaicdffflnofjppbagibeoednhnbjhg
-  - giphy-for-chrome/jlleokkdhkflpmghiioglgmnminbekdi
-  - gitako-github-file-tree/giljefjcheohhamkjphiebfjnlphnokk
-  - gnome-shell-integration/gphhapmejobijbbhgpjhcjognlahblep
-  - google-dictionary-by-goog/mgijmajocgfcbeboacabfgobmjgjcoja
-  - google-translate/aapbdbdomjkkjkaonfhkkikfgjllcleb
-  - google-trends-supercharge/ocmojhiloccgbpjnkeiooioedaklapap
-  - grepper/amaaokahonnfjjemodnpmeenfpnnbkco
-  - gsconnect/jfnifeihccihocjbfcfhicmmgpjicaec
-  - hunter-email-finder-exten/hgmhmanijnjhaffoampdlllchpolkdnj
-  - huntr-job-search-tracker/mihdfbecejheednfigjpdacgeilhlmnf
-  - hypertype/lohojfppjeknalpoklojhfnndocgekbd
-  - json-resume-exporter/caobgmmcpklomkcckaenhjlokpmfbdec
+  # - falcon/mmifbbohghecjloeklpbinkjpbplfalb
+  # - floccus-bookmarks-sync/fnaicdffflnofjppbagibeoednhnbjhg
+  # - giphy-for-chrome/jlleokkdhkflpmghiioglgmnminbekdi
+  # - gitako-github-file-tree/giljefjcheohhamkjphiebfjnlphnokk
+  # - gnome-shell-integration/gphhapmejobijbbhgpjhcjognlahblep
+  # - google-dictionary-by-goog/mgijmajocgfcbeboacabfgobmjgjcoja
+  # - google-translate/aapbdbdomjkkjkaonfhkkikfgjllcleb
+  # - google-trends-supercharge/ocmojhiloccgbpjnkeiooioedaklapap
+  # - grepper/amaaokahonnfjjemodnpmeenfpnnbkco
+  # - gsconnect/jfnifeihccihocjbfcfhicmmgpjicaec
+  # - hunter-email-finder-exten/hgmhmanijnjhaffoampdlllchpolkdnj
+  # - huntr-job-search-tracker/mihdfbecejheednfigjpdacgeilhlmnf
+  # - hypertype/lohojfppjeknalpoklojhfnndocgekbd
+  # - json-resume-exporter/caobgmmcpklomkcckaenhjlokpmfbdec
   - json-viewer-pro/eifflpmocdbdmepbjaopkkhbfmdgijcc
   - magical-chatgpt-ai-writer/iibninhmiggehlcdolcilmhacighjamp
-  - mailvelope/kajibbejlbohfaggdiogboambcijhkke
-  - markdown-here/elifhakcjgalahccnjkneoccemfahfoa
-  - metamask/nkbihfbeogaeaoehlefnkodbefgpgknn
-  - notion-web-clipper/knheggckgoiihginacbkhaalnibhilkk
+  # - mailvelope/kajibbejlbohfaggdiogboambcijhkke
+  # - markdown-here/elifhakcjgalahccnjkneoccemfahfoa
+  # - metamask/nkbihfbeogaeaoehlefnkodbefgpgknn
+  # - notion-web-clipper/knheggckgoiihginacbkhaalnibhilkk
   - octohint/hbkpjkfdheainjkkebeoofkpgddnnbpk
   - pieces-save-code-snippets/igbgibhbfonhmjlechmeefimncpekepm
-  - postman-interceptor/aicmkgpgakddgnaphhhpliifpcfhicfo
-  - pushbullet/chlffgpmiacpedhhbkiomidkjlcfhogd
-  - rakuten-get-cash-back-for/chhjbpecpncaggjpdakmflnfcopglcmi
+  # - postman-interceptor/aicmkgpgakddgnaphhhpliifpcfhicfo
+  # - pushbullet/chlffgpmiacpedhhbkiomidkjlcfhogd
+  # - rakuten-get-cash-back-for/chhjbpecpncaggjpdakmflnfcopglcmi
   - refined-github/hlepfoohegkhhmjieoechaddaejaokhf
-  - save-to-google-drive/gmbmikajjgmnabiglmofipeabaddhgne
-  - screenity-screen-recorder/kbbdabhdfibnancpjfhlkhafgdilcnji
+  # - save-to-google-drive/gmbmikajjgmnabiglmofipeabaddhgne
+  # - screenity-screen-recorder/kbbdabhdfibnancpjfhlkhafgdilcnji
   - search-by-image/cnojnbdhbhnkbcieeekonklommdnndci
-  - sessionbox-multi-login-to/megbklhjamjbcafknkgmokldgolkdfig
+  # - sessionbox-multi-login-to/megbklhjamjbcafknkgmokldgolkdfig
   - singlefile/mpiodijhokgodhhofbcjdecpffjipkle
   - sponsorblock-for-youtube/mnjggcdmjocbbbhaepdhchncahnbgone
-  - toucan-language-learning/lokjgaehpcnlmkebpmjiofccpklbmoci
-  - vimeo-record-screen-webca/ejfmffkmeigkphomnpabpdabfddeadcb
+  # - toucan-language-learning/lokjgaehpcnlmkebpmjiofccpklbmoci
+  # - vimeo-record-screen-webca/ejfmffkmeigkphomnpabpdabfddeadcb
   - vytal/ncbknoohfjmcfneopnfkapmkblaenokb
   - web-archives/hkligngkgcpcolhcnkgccglchdafcnao
-  - web-vitals/ahfhijdlegdabablpippeagghigmibma
+  # - web-vitals/ahfhijdlegdabablpippeagghigmibma
 firefoxPublicProfile: https://github.com/ProfessorManhattan/firefox-profile-with-plugins.git
 firefoxAddOns:
   - automa
+  - axe-devtools
   - bitwarden-password-manager
-  - buffer-for-firefox
+  # - buffer-for-firefox
   - buster-captcha-solver
   - canvasblocker
   - chatgpt-for-google
   - clearurls
+  - clockwork-dev-tools
+  - consent-o-matic
   - decentraleyes
   - dictionary-anyvhere
-  - ebates
+  - duckduckgo-for-firefox
+  # - ebates
   - emoji-sav
+  - facebook-container
   - falcon_extension
-  - firefox-translations
-  - floccus
-  - giphy-for-firefox
-  - gnome-shell-integration
-  - hoppscotch
-  - json-lite
+  # - firefox-translations # functionality now integrated into Firefox
+  # - floccus
+  # - giphy-for-firefox
+  # - gnome-shell-integration
+  - greasemonkey
+  # - hoppscotch
+  # - json-lite
   - languagetool
-  - pushbullet
-  - mailvelope
-  - markdown-here
+  # - pushbullet
+  # - mailvelope
+  # - markdown-here
   - medium-unlimited-read-for-free
-  - multi-account-containers
+  # - multi-account-containers
   # - notion-web-clipper
   - pieces-save-code-from-the-web
   - private-relay
@@ -139,13 +145,22 @@ firefoxAddOns:
   - search_by_image
   - single-file
   - sponsorblock
+  - styl-us
   - swift-selection-search
-  - temporary-containers
+  - tampermonkey
+  # - temporary-containers
   - tiny_url
+  - torproject-snowflake
+  - tree-style-tab
+  - uaswitcher
   - ublock-origin
   - umatrix
-  - undoclosetabbutton
+  # - undoclosetabbutton
   - view-page-archive
+  - vue-js-devtools
+  - wappalyzer
+  - wayback-machine_new
+  - xdebug-helper-for-firefox
 fonts:
   main: Montserrat Bold
 grub:
@@ -166,38 +181,38 @@ removeLinuxShortcuts:
   - scvim.desktop
 theme: Betelgeuse
 softwareGroups:
-  AI: &AI
-    - aider
-    - ai-shell
-    - aifiles
-    - talksheet
-    - tgpt
-  AI-Desktop: &AI-Desktop
-    - chatgpt-nofwl
-    - chatgpt-menubar
-    - gpt-engineer
-    - langflow
-    - mage-ai
-    - shell-gpt
-  Android: &Android
-    - apktool
-    - repo
-    - scrcpy
-  Android-Desktop: &Android-Desktop
-    - android-studio
-    - genymotion
-    - scrcpy-gui
-    - soduto
+  AI: &AI []
+    # - aider
+    # - ai-shell
+    # - aifiles
+    # - talksheet
+    # - tgpt
+  AI-Desktop: &AI-Desktop []
+    # - chatgpt-nofwl
+    # - chatgpt-menubar
+    # - gpt-engineer
+    # - langflow
+    # - mage-ai
+    # - shell-gpt
+  Android: &Android []
+    # - apktool
+    # - repo
+    # - scrcpy
+  Android-Desktop: &Android-Desktop []
+    # - android-studio
+    # - genymotion
+    # - scrcpy-gui
+    # - soduto
   Anon: &Anon
     - onionshare
-  Ansible: &Ansible
-    - ansible
-    - ansibler
-    - ansible-lint
-    - ansibleconnect
-    - awxcli
-    - molecule
-    - winrm-cli
+  Ansible: &Ansible []
+    # - ansible
+    # - ansibler
+    # - ansible-lint
+    # - ansibleconnect
+    # - awxcli
+    # - molecule
+    # - winrm-cli
   Ansible-Roles: &Ansible-Roles []
     # TODO: Implement these using chezmoiscripts
     ## - ssh
@@ -230,43 +245,43 @@ softwareGroups:
     # - swarm
     # - maas
   Backup: &Backup
-    - autorestic
-    - backup
+    # - autorestic
+    # - backup
     - ghorg
-    - mackup
-    - restic
-    - sanoid
+    # - mackup
+    # - restic
+    # - sanoid
   Backup-Desktop: &Backup-Desktop
-    - cryptomator
-    - seafile-client
+    # - cryptomator
+    # - seafile-client
     - timeshift
   Browsers: &Browsers
     - w3m
   Browsers-Desktop: &Browsers-Desktop
-    - brave-browser
+    # - brave-browser
     - google-chrome
-    - chrome-cli
-    - ferdium
+    # - chrome-cli
+    # - ferdium
     - firefox
-    - microsoft-edge
+    # - microsoft-edge
     - tor-browser
   CI: &CI
-    - act
-    - argo-cli
-    - drone-cli
-    - fpm
-    - github-runner
-    - gitlab-runner
-    - glen
+    # - act
+    # - argo-cli
+    # - drone-cli
+    # - fpm
+    # - github-runner
+    # - gitlab-runner
+    # - glen
     - pipelight
-    - tart
+    # - tart
   CLI: &CLI
     - atuin
     - bash-completion
     - bandwhich
     - bat
     - bat-extras
-    - bottom
+    # - bottom
     - broot
     - carapace
     - cheat
@@ -275,7 +290,7 @@ softwareGroups:
     - curl
     - curlie
     - delta
-    - desk
+    # - desk
     - direnv
     - docker-langserver
     - dog
@@ -287,38 +302,40 @@ softwareGroups:
     - fcp
     - fd
     - firefox-profile
+    - fish-shell
     - fkill
     - fzf
-    - ghcup
+    # - ghcup
     - git
-    - microsoft-git
-    - glances
+    # - microsoft-git
+    # - glances
     - glow
     - gnu
     - gping
     - gum
     - hoard
     - htmlq # htmlq is used by the the Firefox script
+    - hyfetch
     - hyperfine
     - jq
     - lsd
-    - mask
-    - mc
-    - navi
+    # - mask
+    # - mc
+    # - navi
     - nb
     - neovim
     - netcat
-    - ntfy
+    # - ntfy
     - nmap
     - nnn
     - node
     - nushell
-    - oh-my-posh
-    - pass
+    # - oh-my-posh
+    # - pass
     - postfix
     - procs
     - prettier
-    - privoxy
+    # - privoxy
     - python2
     - recoverpy
     - ripgrep
@@ -332,15 +349,17 @@ softwareGroups:
     - task
     - pkgx
     - tmux
-    - tor
+    - topgrade
+    # - tor
     - translate
     - tree
+    - ugm
     - vim
     - volta
     - xpanes
     - xxh
     - watchexec
-    - watchman
+    # - watchman
     - wget
     - whalebrew
     - wifi-password
@@ -348,46 +367,46 @@ softwareGroups:
     - zoxide
     - zsh
     - zx
-    - zenity
+    # - zenity
   CLI-Extras: &CLI-Extras
     - ack
     - airdrop-cli
-    - axel
+    # - axel
     - bin
     - bitly
     - brew-gem
-    - brew-pkg
+    # - brew-pkg
     - charm
     - cod
-    - desed
+    # - desed
     - difftastic
-    - dockutil
-    - doitlive
+    # - dockutil
+    # - doitlive
     - duti
     - ejs
-    - emplace
+    # - emplace
     - emoj
     - fdupes
     - fig
     - figlet
-    - filebrowser
+    # - filebrowser
     - forever
     - fm
-    - gitmoji-cli
-    - gopass
+    # - gitmoji-cli
+    # - gopass
     - grex
     - gron
     - has
     - handlr
-    - helix
+    # - helix
     - hexyl
-    - hstr
+    # - hstr
     - http-prompt
     - httpie
     - httpstat
     - howdoi
-    - hurl
-    - imgur-uploader
+    # - hurl
+    # - imgur-uploader
     - is-up
     - jiq
     - jqp
@@ -395,29 +414,29 @@ softwareGroups:
     - kcpassword
     - litecli
     - lolcat
-    - marp
+    # - marp
     - mods
     - mycli
-    - neofetch
+    # - neofetch
     - nomino
     - normit
-    - nve
-    # - obsidian-cli
-    - opn-cli
+    # - nve
+    - obsidian-cli
+    # - opn-cli
     - pastel
     - peco
-    - percol
-    - pfsense-fauxapi
+    # - percol
+    # - pfsense-fauxapi
     - pick
-    - pidcat
+    # - pidcat
     - pgcli
     - pueue
     - pywhat
-    - resume
+    # - resume
     - s-search
     - sad
-    - safe-rm
-    - search-gpt
+    # - safe-rm
+    # - search-gpt
     - shml
     - shx
     - slack-term
@@ -433,7 +452,7 @@ softwareGroups:
     - timewarrior
     - tmuxinator
     - up
-    - vdirsyncer
+    # - vdirsyncer
     - wallpaper-cli
     - wego
     - whereami
@@ -443,75 +462,78 @@ softwareGroups:
     - yank
     - zsh-completions
   Cloud: &Cloud
-    - awscli
-    - aws-shell
-    - azure-cli
-    - azure-functions
-    - budibase-cli
-    - consul-cli
-    - curator
+    # - awscli
+    # - aws-shell
+    # - azure-cli
+    # - azure-functions
+    # - budibase-cli
+    # - consul-cli
+    # - curator
     - doctl
-    - envconsul
-    - fission
-    - fly
-    - gcloud
+    # - envconsul
+    # - fission
+    # - fly
+    # - gcloud
     - heroku-cli
-    - infracost
-    - juju
+    # - infracost
+    # - juju
     - lexicon
-    - logcli
-    - mongodb-atlas
-    - nextcloud
-    - psu
-    - rancher-cli
+    # - logcli
+    # - mongodb-atlas
+    # - nextcloud
+    # - psu
+    # - rancher-cli
   Cloud-Storage: &Cloud-Storage
-    - gdrive
-    - gphotos-sync
+    # - gdrive
+    # - gphotos-sync
     - rclone
-    - s5cmd
+    # - s5cmd
   Compression: &Compression
     - p7zip
     - pigz
-  Communication: &Communication
-    - apprise
-    - irssi
+  Communication: &Communication []
+    # - apprise
+    # - irssi
   Communication-Desktop: &Communication-Desktop
     - *Communication
-    - discord
-    - element
-    - microsoft-teams
+    - adium
+    # - discord
+    # - element
+    # - microsoft-teams
     # - jitsi-meet
     # - keybase
-    - skype
-    - slack
+    - pidgin
+    # - skype
+    # - slack
     # - telegram
-    - zoom
+    - vesktop
+    # - zoom
   Crypto: &Crypto
     - cointop
-    - monero
-    - monero-cli
-    - mymonero
-  Crypto-Desktop: &Crypto-Desktop
-    - ledger-live
-    - onlykey
+    # - monero
+    # - monero-cli
+    # - mymonero
+  Crypto-Desktop: &Crypto-Desktop []
+    # - ledger-live
+    # - onlykey
   DNS: &DNS
-    - blocky
+    # - blocky
     - hostctl
-    - iodine
+    # - iodine
     - switchhosts
   Data-Manipulation: &Data-Manipulation
     - dasel
     - fq
-    - fselect
+    # - fselect
     - fx
     - gojq
-    - hclq
+    # - hclq
     - jc
     - jo
     - jq
     - miller
     - oq
-    - osquery
+    # - osquery
     - pup
     - ramda
     - schema
@@ -526,46 +548,48 @@ softwareGroups:
   Database: &Database
     - iredis
     - mariadb
-    - mongodb
-    - octosql
+    # - mongodb
+    # - octosql
     - sqlite
     - steampipe
     - usql
   Database-Desktop: &Database-Desktop
     - beekeeper-studio
     - medis
-    - mongodb-compass
+    # - mongodb-compass
   Development-Tools-Desktop: &Development-Tools-Desktop
-    - github-desktop
-    - intellij-idea-ce
+    # - github-desktop
+    - httpie-desktop
+    # - intellij-idea-ce
     - meld
-    - powershell
-    - redis-desktop-manager
+    # - powershell
+    # - redis-desktop-manager
     - redis-insight
-    - visual-studio
+    # - visual-studio
     - warp-terminal
-    - winui-gallery
-    - wpfui
-    - xcode
-    - xcodes
-    - xcodes-app
-    - xcpretty
-    - x64dbg
+    - wezterm
+    # - winui-gallery
+    # - wpfui
+    # - xcode
+    # - xcodes
+    # - xcodes-app
+    # - xcpretty
+    # - x64dbg
   Docker: &Docker
-    - bane
-    - clair
-    - container-structure-test
-    - dive
-    - docker-pushrm
-    - docker-slim
-    - dockle
-    - dockly
-    - footloose
-    - grype
+    # - bane
+    # - clair
+    # - container-structure-test
+    # - dive
+    # - docker-pushrm
+    # - docker-slim
+    # - dockle
+    # - dockly
+    # - footloose
+    # - grype
     - trivy
     - trufflehog
   E-mail: &E-mail
-    - himalaya
+    # - himalaya
     - mailsy
   E-mail-Desktop: &E-mail-Desktop
     - m-cli
@@ -573,27 +597,27 @@ softwareGroups:
     - protonmail-import-export
     - protonmail-bridge
     # - thunderbird
-  Engineering-Desktop: &Engineering-Desktop
-    - arduino-ide
-    - cutter
-    - fritzing
+  Engineering-Desktop: &Engineering-Desktop []
+    # - arduino-ide
+    # - cutter
+    # - fritzing
   Essentials: &Essentials
     - clamav
     - docker
     - meta-package-manager
     - openssl-osx-ca
-    - rkhunter
+    # - rkhunter
   Essentials-Desktop: &Essentials-Desktop
-    - autokey
-    - bismuth
-    - codeedit
+    # - autokey
+    # - bismuth
+    # - codeedit
     - eul
     - firefox
     - flow-launcher
     - gnome
     - iina
     - kvantum
-    - lapce
+    # - lapce
     - malwarebytes
     - mpv
     - portmaster
@@ -602,28 +626,28 @@ softwareGroups:
     - spacedrive
     # - tabby
     - vlc
-    - vscode
+    # - vscode
   File-System: &File-System
-    - duck
-    - glusterfs
-    - goofys
+    # - duck
+    # - glusterfs
+    # - goofys
     - sshfs
-  File-System-Desktop: &File-System-Desktop
-    - cyberduck
-  Finance: &Finance
-    - infracost
-  Finance-Desktop: &Finance-Desktop
-    - tradingview
+  File-System-Desktop: &File-System-Desktop []
+    # - cyberduck
+  Finance: &Finance []
+    # - infracost
+  Finance-Desktop: &Finance-Desktop []
+    # - tradingview
   Games-Desktop: &Games-Desktop
-    - mudlet # MUD client 
+    # - mudlet # MUD client
     - steam
   Git: &Git
-    - aicommits
+    # - aicommits
     - commitizen
     - gh
     - gist
     - git
-    - gitql
+    # - gitql
     - git-bug
     - git-branchless
     - git-extras
@@ -631,28 +655,28 @@ softwareGroups:
     - git-jump
     - git-lfs
     - git-open
-    - git-secret
+    # - git-secret
     - git-subrepo
     - git-town
     - gitomatic
     - git-stats
-    - gitui
-    - glab
-    - hub
+    # - gitui
+    # - glab
+    # - hub
     - lazygit
     - multi-gitter
-    - opencommit
-    - repo
-    - starred
-    - tig
+    # - opencommit
+    # - repo
+    # - starred
+    # - tig
   Git-Desktop: &Git-Desktop
-    - github-classroom-assistant
+    # - github-classroom-assistant
     - gitify
-    - gitkraken
+    # - gitkraken
   Git-Project-Tools: &Git-Project-Tools
     - appnest-readme
     - commitlint
-    - git-notify
+    # - git-notify
     - hbs-cli
     - husky
     - liquidjs
@@ -660,87 +684,87 @@ softwareGroups:
     - synp
     - yarnhook
   Go: &Go
-    - delve
+    # - delve
     - go
     - goreleaser
-    - go-outline
+    # - go-outline
     - gomodifytags
     - gopkgs
     - gopls
     - gotests
     - impl
     - staticcheck
-    - wails
-  Home: &Home
-    - go-chromecast
-  Kubernetes: &Kubernetes
-    - cmctl
-    - kdash
-    - kn
+    # - wails
+  Home: &Home []
+    # - go-chromecast
+  Kubernetes: &Kubernetes []
+    # - cmctl
+    # - kdash
+    # - kn
     # TODO: Check if some of these are installed by Krew and remove if they are
-    - krew
-    - kubectx
-    - kubekey
-    - kubenav
-    - kube-shell
-    - kubernetes-cli
-    - helm
-    - helmfile
-    - helm-docs
-    - kubernetes-kompose
-    - kubeval
-    - k9s
-    - kustomize
-    - linkerd2
-    - minikube
-    - openshift-cli
-    - skaffold
-    - tilt
-    - velero
-  Kubernetes-Desktop: &Kubernetes-Desktop
-    - lens
+    # - krew
+    # - kubectx
+    # - kubekey
+    # - kubenav
+    # - kube-shell
+    # - kubernetes-cli
+    # - helm
+    # - helmfile
+    # - helm-docs
+    # - kubernetes-kompose
+    # - kubeval
+    # - k9s
+    # - kustomize
+    # - linkerd2
+    # - minikube
+    # - openshift-cli
+    # - skaffold
+    # - tilt
+    # - velero
+  Kubernetes-Desktop: &Kubernetes-Desktop []
+    # - lens
   Linting: &Linting
-    - ansible-lint
+    # - ansible-lint
     - cloc
     - dockfmt
     - dotenv-linter
-    - dprint
+    # - dprint
     - eslint
     - eslint-dashboard
     - eslintd
     - esprint
     - gitleaks
     - golangci-lint
-    - hadolint
+    # - hadolint
     - markdownlint-cli
     - prettierd
-    - pre-commit
+    # - pre-commit
     - psscriptanalyzer
     - reek
     - rubocop
     - ruff
     - shellcheck
     - shfmt
-    - swiftformat
-    - tflint
-    - tfsec
+    # - swiftformat
+    # - tflint
+    # - tfsec
     - tokei
-    - trunk
+    # - trunk
     - vale
     - yamllint
     - yapf
-  Logging: &Logging
-    - fuego
-    - papertrail
-    - rsyslog
-    - runitor
-    - sentry-cli
-    - unbuffer
+  Logging: &Logging []
+    # - fuego
+    # - papertrail
+    # - rsyslog
+    # - runitor
+    # - sentry-cli
+    # - unbuffer
   Media: &Media
-    - alda
-    - beets
-    - crunch
-    - exiftool
+    # - alda
+    # - beets
+    # - crunch
+    # - exiftool
     - ffmpeg
     - gifsicle
     - imagemagick
@@ -751,7 +775,7 @@ softwareGroups:
     - sharp
     - spotdl
     - svgo
-    - tinypng
+    # - tinypng
     - vidmerger
     - wkhtmltopdf
     - you-get
@@ -759,116 +783,116 @@ softwareGroups:
     - yt-dlp
   Media-Desktop: &Media-Desktop
     # - airtame
-    - audacity
-    - balenaetcher
-    - blender
-    - brasero
-    - crunch-app
-    - gimp
-    - handbrake
-    - inkscape
-    - kdenlive
-    - kodi
-    - krita
-    - lollypop
-    - obs-studio
-    - plex
-    - plex-htpc
-    - plex-media-server
-    - prezi-video
-    - raspberry-pi-imager
-    - shotcut
-    - shotwell
+    # - audacity
+    # - balenaetcher
+    # - blender
+    # - brasero
+    # - crunch-app
+    # - gimp
+    # - handbrake
+    # - inkscape
+    # - kdenlive
+    # - kodi
+    # - krita
+    # - lollypop
+    # - obs-studio
+    # - plex
+    # - plex-htpc
+    # - plex-media-server
+    # - prezi-video
+    # - raspberry-pi-imager
+    # - shotcut
+    # - shotwell
     - upscayl
     - vlc
-    - youtube-music
+    # - youtube-music
   Misc-Desktop: &Misc-Desktop
     - _misc-flatpaks
     - _nautilus-extensions
-    - barrier
-    - cakebrew
+    # - barrier
+    # - cakebrew
     - chrome-remote-desktop-host
-    - clocker
+    # - clocker
     - devtoys
     - devtoys-windows
-    - drawio
+    # - drawio
     - eartrumpet
     - edex-ui
-    - envpane
-    - google-assistant
+    # - envpane
+    # - google-assistant
     - gnome-tweaks
     - hiddenbar
     - keycastr
     - linkliar
-    - logi-options-plus
-    - logi-tune
+    # - logi-options-plus
+    # - logi-tune
     - mark-text
-    - meetingbar
+    # - meetingbar
     - modern-flyouts
     - monitorcontrol
     - openinterminal
     - pake
-    - pock
+    # - pock
     - polybar
     - pretzel
-    - privileges
+    # - privileges
     - qlplugins
-    - remote-desktop
-    - remmina
+    # - remote-desktop
+    # - remmina
     - rofi
-    - rustdesk
+    # - rustdesk
     - secretive
-    - stats
+    # - stats
     - swiftbar
-    - teamviewer
-    - tigervnc
-    - xpra
+    # - teamviewer
+    # - tigervnc
+    # - xpra
   Misc-Development-Tools: &Misc-Development-Tools
     - ansifilter
-    - aqua
+    # - aqua
     - astronvim
-    - automake
-    - bazelisk
-    - binwalk
+    # - automake
+    # - bazelisk
+    # - binwalk
     - bfg
     - bundler
-    - carthage
+    # - carthage
     - cmake
-    - cocoapods
+    # - cocoapods
     # - codeclimate Errors it out because it requires Docker to be installed
-    - dotnet
+    # - dotnet
     - expect
-    - fury
-    - gradle
-    - ideviceinstaller
-    - ios-deploy
-    - ios-sim
+    # - fury
+    # - gradle
+    # - ideviceinstaller
+    # - ios-deploy
+    # - ios-sim
     - java
-    - jenv
+    # - jenv
     - libimobiledevice
     - license
-    - lightproxy
+    # - lightproxy
     - lua
-    - makeself
+    # - makeself
     - meta
-    - mono
-    - ninja
+    # - mono
+    # - ninja
     - ntl
-    - nugetpackageexplorer
-    - openjdk
-    - platformio
-    - please
-    - porter
-    - proxyman
-    - pushpin
+    # - nugetpackageexplorer
+    # - openjdk
+    # - platformio
+    # - please
+    # - porter
+    # - proxyman
+    # - pushpin
     - rust
-    - snapcraft
-    - solidity
-    - swimat
-    - tomcat
+    # - snapcraft
+    # - solidity
+    # - swimat
+    # - tomcat
     - upx
-    - windows-adk
-    - windows-admin-center
+    # - windows-adk
+    # - windows-admin-center
     - windows-power-toys
   NGINX: &NGINX
     - caddy
@@ -886,61 +910,61 @@ softwareGroups:
     - lexicon
     - squid
   Networking: &Networking
-    - etcd
-    - cloudflared
-    - glusterfs
-    - juicefs
-    - mole
-    - mutagen
-    - nebula
-    - ngrok
-    - privaxy
-    - pwnat
+    # - etcd
+    # - cloudflared
+    # - glusterfs
+    # - juicefs
+    # - mole
+    # - mutagen
+    # - nebula
+    # - ngrok
+    # - privaxy
+    # - pwnat
     - rustscan
     - ssl-proxy
-    - tailscale
-    - warp
+    # - tailscale
+    # - warp
   Orchestration: &Orchestration
     - dagu
-    - nomad
-    - pm2
-    - robotframework
+    # - nomad
+    # - pm2
+    # - robotframework
     - sake
-    - waypoint
+    # - waypoint
   PHP: &PHP
     - composer
     - php
   Package-Management: &Package-Management
     # - homebrew
-    # - whalebrew
+    - whalebrew
     - eget
     - gup
     - mise
     - syncpack
-    - ultra
+    # - ultra
     - zap
   Productivity-Desktop: &Productivity-Desktop
-    - alt-tab
-    - amethyst
+    # - alt-tab
+    # - amethyst
     - espanso
     # - fiscript
     - languagetool
-    - libreoffice
-    - microsoft-office
-    - notion
-    # - obsidian
+    # - libreoffice
+    # - microsoft-office
+    # - notion
+    - obsidian
     - raycast
     - skhd
   Python: &Python
     - flake8
     - isort
-    - mambaforge
+    # - mambaforge
     - poetry
     - python
     - virtualenv
   Recording: &Recording
     - asciinema
-    - blackhole
+    # - blackhole
     - carbon-now
     - dframe
     - t-rec
@@ -948,68 +972,68 @@ softwareGroups:
     - vhs
   Recording-Desktop: &Recording-Desktop
     - flameshot
-    - kap
-    - peek
+    # - kap
+    # - peek
     - sharex
   Ruby: &Ruby
     - ruby
   SSH: &SSH
-    - assh
+    # - assh
     - endlessh
-    - fabric
+    # - fabric
     - fail2ban
-    - hss
-    - mosh
+    # - hss
+    # - mosh
     - openssh-server
     - skm
     - ssh-vault
     - sshpass
     - sshs
-    - sync-ssh-keys
-    - teleport
+    # - sync-ssh-keys
+    # - teleport
     - tmate
-    - wetty
+    # - wetty
     - wishlist
   Security: &Security
     - bitwarden-cli
-    - boringtun
+    # - boringtun
     - debsecan
-    - dotenv-vault
+    # - dotenv-vault
     - envchain
-    - envconsul
-    - envio
-    - onlykey-agent
-    - onlykey-cli
+    # - envconsul
+    # - envio
+    # - onlykey-agent
+    # - onlykey-cli
     - openssl
     - pony
     - protonvpn-cli
-    - quark-engine
-    - scap-security-guide
+    # - quark-engine
+    # - scap-security-guide
     - skate
     - ssh-vault
-    - sshuttle
-    - teller
-    - vault
+    # - sshuttle
+    # - teller
+    # - vault
     - wireguard-client
     - wireguard-tools
-    - yubikey-manager
+    # - yubikey-manager
   Security-Desktop: &Security-Desktop
     - bitwarden
     - lulu
     - portmaster
-    - privileges
+    # - privileges
     - protonvpn
     - santa
-    - swifty
+    # - swifty
     - tunnelblick
-    - yubikey-authenticator
-    - yubikey-manager-qt
+    # - yubikey-authenticator
+    # - yubikey-manager-qt
   Server: &Server
     - cockpit
     - cups
     - easyengine
     - haproxy
-    - netdata
+    # - netdata
     - redis
     - samba
     - sftpgo
@@ -1017,7 +1041,7 @@ softwareGroups:
   Shell-Scripting: &Shell-Scripting
     - argc
     - bashly
-    - bats
+    # - bats
     - shc
     - shdoc
     - shellcheck
@@ -1026,61 +1050,62 @@ softwareGroups:
     - enola
     - holehe
     - social-analyzer
-    - t
-  Hacking: &Hacking
-    - ettercap
-    - john
+    # - t
+  Hacking: &Hacking []
+    # - ettercap
+    # - john
   Sys-Admin: &Sys-Admin
     - arping
-    - ctop
-    - fleetctl
-    - goaccess
-    - gtop
-    - htop
-    - ipmitool
+    # - ctop
+    # - fleetctl
+    # - goaccess
+    # - gtop
+    # - htop
+    # - ipmitool
     - iproute2mac
-    - masscan
-    - plumber
+    # - masscan
+    # - plumber
     - prefsniff
-    - pulumi
-    - rtop
-    - supervisor
-    - sysbench
-    - sysdig
+    # - pulumi
+    # - rtop
+    # - supervisor
+    # - sysbench
+    # - sysdig
     - sysz
-    - upt
-    - winrm-cli
+    - ugm
+    # - upt
+    # - winrm-cli
     # - wireshark-cli
   Sys-Admin-Desktop: &Sys-Admin-Desktop
-    - networkmanager
-    - pppc-utility
-    - quasar
+    # - networkmanager
+    # - pppc-utility
+    # - quasar
     - recuva
     - sloth
     - snitch
     - wireshark
   Templates: &Templates
-    - confd
-    - consul-template
-    - cookiecutter
+    # - confd
+    # - consul-template
+    # - cookiecutter
     - gomplate
-  Terraform: &Terraform
-    - aiac
-    - terraform
-    - tfenv
-    - tflint
-  Testing: &Testing
-    - allure
-    - appium
-    - molecule
+  Terraform: &Terraform []
+    # - aiac
+    # - terraform
+    # - tfenv
+    # - tflint
+  Testing: &Testing []
+    # - allure
+    # - appium
+    # - molecule
   Transfer: &Transfer
-    - aria2
+    # - aria2
     - croc
-    - dat
+    # - dat
     - ffsend
     - gdown
-    - magic-wormhole
-    - nitroshare
+    # - magic-wormhole
+    # - nitroshare
     - ots
     - portal
     - share
@@ -1088,82 +1113,82 @@ softwareGroups:
     - lsyncd
     - unison
   Transfer-Desktop: &Transfer-Desktop
-    - dat-desktop
-    - google-drive
+    # - dat-desktop
+    # - google-drive
     - motrix
     - qbittorrent
     - sparkleshare
     - webtorrent
   Utilities: &Utilities
     - blueutil
-    - nativefier
+    # - nativefier
   Virtualization: &Virtualization
-    - d2vm
-    - distrobox
+    # - d2vm
+    # - distrobox
     - kvm
     - libguestfs-tools
-    - lxdc
-    - lxd-ui
-    - packer
-    - quickemu
-    - vagrant
-    - vagrant-vmware-utility
-    - vermin
+    # - lxdc
+    # - lxd-ui
+    # - packer
+    # - quickemu
+    # - vagrant
+    # - vagrant-vmware-utility
+    # - vermin
   Virtualization-Desktop: &Virtualization-Desktop
     - docker-desktop
     - gnome-boxes
-    - parallels
-    - quickgui
+    # - parallels
+    # - quickgui
     - utm
-    - vagrant-manager
+    # - vagrant-manager
     - virtualbox
-    - vmware
+    # - vmware
   Web-Development: &Web-Development
-    - angular-cli
-    - autodoc
+    # - angular-cli
+    # - autodoc
     - auto-install
-    - browser-sync
-    - bun
+    # - browser-sync
+    # - bun
     - caniuse
-    - capacitor
-    - cloudflare-cli
-    - coder
-    - cordova
+    # - capacitor
+    # - cloudflare-cli
+    # - coder
+    # - cordova
     - deno
-    - deta
-    - devbox
-    - devspace
+    # - deta
+    # - devbox
+    # - devspace
     - electron
     - emma
-    - fastify
-    - fastlane
-    - feathers
-    - firebase
-    - flutter
-    - generator-ngx-rocket
+    # - fastify
+    # - fastlane
+    # - feathers
+    # - firebase
+    # - flutter
+    # - generator-ngx-rocket
     - gfi
     - gulp
     - hey
     - htmlhint
     - hugo
-    - ionic
+    # - ionic
     - imageoptim-cli
-    - ipfs
-    - ipfs-deploy
+    # - ipfs
+    # - ipfs-deploy
     - jest
-    - json-server
+    # - json-server
     - lighthouse
     - localtunnel
-    - mailcatcher
+    # - mailcatcher
     - majestic
-    - medusa
-    - mitmproxy
+    # - medusa
+    # - mitmproxy
     - muffet
-    - nativescript
+    # - nativescript
     - ncc
-    - nectar
-    - nest
-    - newman
+    # - nectar
+    # - nest
+    # - newman
     - ngrok
     - node-prune
     - nodemon
@@ -1171,67 +1196,68 @@ softwareGroups:
     - npkill
     - npm-check # Similar to npm-check-updates
     - npm-check-updates
-    - nx
+    # - nx
     - oclif
-    - osx-sign
+    # - osx-sign
     - package-size
     - page-fetch
     - pageres
     - patch-package
-    - pipedream-cli
-    - pkg
-    - playwright
+    # - pipedream-cli
+    # - pkg
+    # - playwright
     - pnpm
-    - projen
-    - psi
-    - quicktype
+    # - projen
+    # - psi
+    # - quicktype
     - semantic-release
     - serve
-    - serverless
-    - shuttle
-    - sphinx
+    # - serverless
+    # - shuttle
+    # - sphinx
     - storybook
     - surge
-    - trellis
+    # - trellis
     - ts2c
     - turbo
     - typescript
     - typescript-to-lua
-    - web-ext
+    # - web-ext
     - websocat
-    - wordpressify
-    - wp-cli
-    - wrangler
+    # - wordpressify
+    # - wp-cli
+    # - wrangler
     - wrk
     - yarn
-    - zola
+    # - zola
   Web-Development-Desktop: &Web-Development-Desktop
     # - altair
-    - betwixt
-    - fiddler
-    - figma
-    - google-web-designer
-    - http-toolkit
+    # - betwixt
+    # - fiddler
+    # - figma
+    # - google-web-designer
+    # - http-toolkit
     - imagine
     - imageoptim
-    - ipfs-desktop
-    - mjml
-    - markmap
-    - mockoon
-    - mqttx
-    - ndb
+    # - ipfs-desktop
+    # - mjml
+    # - markmap
+    # - mockoon
+    # - mqttx
+    # - ndb
     - phpmon
     - pieces
     - pieces-os
     - pieces-cli
     - pika
-    - postman
+    # - postman
     - responsively
     - runjs
-    - wordpresscom
-    - zaproxy
+    # - wordpresscom
+    # - zaproxy
   _Basic: &_Basic
     - *CLI
+    - *Compression
     - *Essentials
     - endlessh
     - fail2ban
@@ -1253,66 +1279,66 @@ softwareGroups:
     - aqua
     - astronvim
     - automake
-    - autorestic
+    # - autorestic
     - bat
     - bfg
     - boringtun
-    - buildkite-agent
+    # - buildkite-agent
     - clamav
-    - cloudflared
+    # - cloudflared
     - cmake
     - cockpit
     - docker
     - dotnet
     - envchain
-    - etcd
-    - exiftool
+    # - etcd
+    # - exiftool
     - expect
     - ffmpeg
-    - fury
+    - filebrowser
+    # - fury
     - git
     - git-extras
     - git-filter-repo
     - git-lfs
-    - git-secret
+    # - git-secret
     - git-subrepo
-    - gitlab-runner
+    # - gitlab-runner
     - gitomatic
-    - glusterfs
     - glusterfs
     - go
     - gomplate
-    - goofys
-    - gradle
+    # - goofys
+    # - gradle
     - imagemagick
     - java
-    - libimobiledevice
-    - nebula
-    - netdata
+    # - libimobiledevice
+    # - nebula
+    # - netdata
     - openssh-server
-    - pm2
+    # - pm2
     - rclone
-    - restic
-    - rkhunter
+    # - restic
+    # - rkhunter
     - rust
     - sake
     - samba
-    - sapling
+    # - sapling
     - sftpgo
     - sharp
     - skate
-    - snapcraft
-    - solidity
+    # - snapcraft
+    # - solidity
     - sqlite
     - ssh-vault
     - sshfs
-    - teller
-    - tinypng
+    # - teller
+    # - tinypng
     - upx
-    - warp
+    # - warp
     - wazuh
-    - windows-adk
-    - windows-admin-center
+    # - windows-adk
+    # - windows-admin-center
     - windows-power-toys
   _Basic-Desktop: &_Basic-Desktop
     - *_Basic
@@ -1328,15 +1354,15 @@ softwareGroups:
     - *Cloud-Storage
     - bitwarden-cli
   _Standard-Desktop-Filter:
-    - discord
-    - gitkraken
-    - jitsi-meet
-    - microsoft-teams
-    - plex-htpc
+    # - discord
+    # - gitkraken
+    # - jitsi-meet
+    # - microsoft-teams
+    # - plex-htpc
     - slack
     - thunderbird
     - yubico-authenticator
-    - zoom
+    # - zoom
   _Standard-Desktop: &_Standard-Desktop
     - *_Basic-Desktop
     - *Backup-Desktop
@@ -1348,11 +1374,11 @@ softwareGroups:
     - *Virtualization-Desktop
     - bitwarden
     - bottles
-    - brave-browser
+    # - brave-browser
     - mailspring
     - protonvpn
-    - tailscale
-    - warp
+    # - tailscale
+    # - warp
   _Full: &_Full
     - *_Standard
     - *AI
@@ -1432,7 +1458,7 @@ softwareGroups:
     - *Virtualization-Desktop
     - *Web-Development-Desktop
   _ID-Desktop:
-    - browsersaurus
+    # - browsersaurus
     - monitorcontrol
     - warp-terminal
   __hostname__base-basic-tmpl:
@@ -1542,7 +1568,7 @@ softwarePlugins:
       - sources;android-34
       # - system-images;android-31;default;x86_64
       # - system-images;android-32;android-desktop;x86_64
-      # - system-images;android-33-ext5;google_apis_playstore;arm64-v8a                                
+      # - system-images;android-33-ext5;google_apis_playstore;arm64-v8a
       # - system-images;android-33-ext5;google_apis_playstore;x86_64
       # - system-images;android-33;android-automotive;arm64-v8a
       # - system-images;android-33;android-automotive;x86_64
@@ -1600,7 +1626,7 @@ softwarePlugins:
       - portainer/portainer-docker-extension:2.19.3
       - redhatdeveloper/openshift-dd-ext
       - snyk/snyk-docker-desktop-extension:0.7.4
-      - tailscale/docker-extension:1.0.1
+      # - tailscale/docker-extension:1.0.1
     when: docker extension list &> /dev/null
   docker-images:
     cmd: bash -c 'if ! docker image list | awk \'{print $1 " " $2}\' | grep "{PLUGIN}" > /dev/null; then docker pull "{PLUGIN}"; fi'
@@ -1636,7 +1662,7 @@ softwarePlugins:
       - gke-gcloud-auth-plugin
       - log-streaming
       - pubsub-emulator
-      - terraform-tools
+      # - terraform-tools
     update: gcloud components update
   gh:
     cmd: bash -c 'if [ -f "${XDG_CONFIG_HOME:-$HOME/.config}/shell/private.sh" ]; then source "${XDG_CONFIG_HOME:-$HOME/.config}/shell/private.sh"; fi && if [ -n "$GITHUB_TOKEN" ] && ! gh extension list | grep "{PLUGIN}" > /dev/null; then gh extension install "{PLUGIN}"; fi'
@@ -1648,24 +1674,23 @@ softwarePlugins:
   intellij-idea-ce:
     cmd: bash -c 'if [ ! -f "${XDG_CACHE_HOME:-$HOME/.cache}/install.doctor/intellij-idea-ce" ] || ! cat "${XDG_CACHE_HOME:-$HOME/.cache}/install.doctor/intellij-idea-ce" | grep "${PLUGIN}" &> /dev/null; then idea installPlugins "{PLUGIN}" && mkdir -p "${XDG_CACHE_HOME:-$HOME/.cache}/install.doctor" && echo "{PLUGIN}" >> "${XDG_CACHE_HOME:-$HOME/.cache}/install.doctor/intellij-idea-ce"; fi'
     plugins:
-      - AngularJS
+      # - AngularJS
       - app.pieces.plugins.jetbrains
       - com.dmarcotte.handlebars
-      - com.github.copilot
+      # - com.github.copilot
       - com.github.masahirosuzuka.PhoneGapIntelliJPlugin
-      - com.jetbrains.edu
+      # - com.jetbrains.edu
       - com.jetbrains.rust
-      - com.wakatime.intellij.plugin
+      # - com.wakatime.intellij.plugin
       - org.intellij.plugins.hcl
       - com.intellij.lang.jsgraphql
       - com.chrisrm.idea.MaterialThemeUI
       - name.kropp.intellij.makefile
-      - com.genymotion.idea
+      # - com.genymotion.idea
       - Docker
       - io.flutter
-      - Dart
-      - Jetbrains TeamCity Plugin
-      - com.wakatime.intellij.plugin
+      # - Dart
+      # - Jetbrains TeamCity Plugin
       - mobi.hsz.idea.gitignore
       - NodeJS
       - org.editorconfig.editorconfigjetbrains
@@ -1737,41 +1762,41 @@ softwarePlugins:
       done
     plugins:
       - https://github.com/aidenlx/media-extended
-      - https://github.com/alangrainger/obsidian-google-photos
+      # - https://github.com/alangrainger/obsidian-google-photos
       - https://github.com/aleksey-rezvov/obsidian-local-images
       - https://github.com/alexandru-dinu/obsidian-sortable
       - https://github.com/AlexW00/obsidian-note-linker
       - https://github.com/argenos/nldates-obsidian
       - https://github.com/bingryan/obsidian-markdown-export-plugin
       - https://github.com/blacksmithgu/obsidian-dataview
-      - https://github.com/bramses/chatgpt-md
+      # - https://github.com/bramses/chatgpt-md
       - https://github.com/Canna71/obsidian-janitor
       - https://github.com/caronchen/obsidian-epub-plugin
-      - https://github.com/CIMSTA/obsidiosaurus
+      # - https://github.com/CIMSTA/obsidiosaurus
       - https://github.com/Clemens-E/obsidian-languagetool-plugin
       - https://github.com/coddingtonbear/obsidian-local-rest-api
       - https://github.com/dartungar/obsidian-mermaid
-      - https://github.com/davish/obsidian-full-calendar
+      # - https://github.com/davish/obsidian-full-calendar
       - https://github.com/deathau/cm-editor-syntax-highlight-obsidian
       - https://github.com/deathau/csv-obsidian
       - https://github.com/denolehov/obsidian-git
-      - https://github.com/devbean/obsidian-wordpress
-      - https://github.com/dexin-qi/obsidian-sync-calendar
+      # - https://github.com/devbean/obsidian-wordpress
+      # - https://github.com/dexin-qi/obsidian-sync-calendar
       - https://github.com/dhamaniasad/obsidian-rich-links
-      - https://github.com/different-ai/obsidian-ava
-      - https://github.com/EasyChris/obsidian-to-notion
+      # - https://github.com/different-ai/obsidian-ava
+      # - https://github.com/EasyChris/obsidian-to-notion
       - https://github.com/Ellpeck/ObsidianCustomFrames
       - https://github.com/FlorianWoelki/obsidian-iconize
       - https://github.com/ganesshkumar/obsidian-table-editor
-      - https://github.com/getmatterapp/obsidian-matter
+      # - https://github.com/getmatterapp/obsidian-matter
       - https://github.com/HEmile/obsidian-search-on-internet
       - https://github.com/hipstersmoothie/obsidian-plugin-toc
-      - https://github.com/ivan-lednev/obsidian-day-planner
-      - https://github.com/jamesmagoo/nostr-writer
+      # - https://github.com/ivan-lednev/obsidian-day-planner
+      # - https://github.com/jamesmagoo/nostr-writer
       - https://github.com/javalent/settings-search
-      - https://github.com/joethei/obsidian-rss
-      - https://github.com/jonstodle/obsius-obsidian-plugin
-      - https://github.com/khoj-ai/khoj
+      # - https://github.com/joethei/obsidian-rss
+      # - https://github.com/jonstodle/obsius-obsidian-plugin
+      # - https://github.com/khoj-ai/khoj
       - https://github.com/liamcain/obsidian-calendar-plugin
       - https://github.com/liamcain/obsidian-periodic-notes
       - https://github.com/linjunpop/obsidian-gist
@@ -1779,100 +1804,102 @@ softwarePlugins:
       - https://github.com/lukeleppan/obsidian-discordrpc
       - https://github.com/Make-md/makemd
       - https://github.com/marcjulianschwarz/obsidian-file-link
-      - https://github.com/marcusolsson/obsidian-projects
+      # - https://github.com/marcusolsson/obsidian-projects
       - https://github.com/mcndt/obsidian-quickshare
       - https://github.com/meld-cp/obsidian-encrypt
-      - https://github.com/mgmeyers/obsidian-kanban
+      # - https://github.com/mgmeyers/obsidian-kanban
       - https://github.com/mgmeyers/obsidian-style-settings
+      - https://github.com/mProjectsCode/obsidian-meta-bind-plugin
       - https://github.com/MrGVSV/obsidian-github-embeds
-      - https://github.com/MSzturc/obsidian-advanced-slides
-      - https://github.com/noatpad/obsidian-banners
-      - https://github.com/NomarCub/obsidian-open-vscode
-      - https://github.com/nybbles/obsidian-pocket
-      - https://github.com/Obsidian-Desci/Obsidian-Desci
+      # - https://github.com/MSzturc/obsidian-advanced-slides
+      # - https://github.com/noatpad/obsidian-banners
+      # - https://github.com/NomarCub/obsidian-open-vscode
+      # - https://github.com/nybbles/obsidian-pocket
+      # - https://github.com/Obsidian-Desci/Obsidian-Desci
       - https://github.com/obsidian-tasks-group/obsidian-tasks
       - https://github.com/obsidianmd/obsidian-importer
-      - https://github.com/ObsidianPublisher/obsidian-github-publisher
+      # - https://github.com/ObsidianPublisher/obsidian-github-publisher
       - https://github.com/oeN/liquid-template
       - https://github.com/OliverBalfour/obsidian-pandoc
       - https://github.com/oliveryh/obsidian-emoji-toolbar
-      - https://github.com/omnivore-app/obsidian-omnivore
+      # - https://github.com/omnivore-app/obsidian-omnivore
       - https://github.com/ozntel/file-tree-alternative
       - https://github.com/phibr0/obsidian-charts
       - https://github.com/phibr0/obsidian-dictionary
       - https://github.com/pieces-app/obsidian-pieces
-      - https://github.com/pieces-app/obsidian-pieces.git
       - https://github.com/platers/obsidian-linter
-      - https://github.com/polyipseity/obsidian-terminal
+      # - https://github.com/polyipseity/obsidian-terminal
       - https://github.com/ravimashru/obsidian-show-file-path
       - https://github.com/sbquinlan/obsidian-handlebars
       - https://github.com/scambier/obsidian-omnisearch
-      - https://github.com/shabegom/buttons
       - https://github.com/snezhig/obsidian-front-matter-title
-      - https://github.com/tadashi-aikawa/obsidian-various-complements-plugin
-      - https://github.com/trashhalo/obsidian-webhooks
+      # - https://github.com/tadashi-aikawa/obsidian-various-complements-plugin
+      # - https://github.com/trashhalo/obsidian-webhooks
       - https://github.com/twentytwokhz/language-translator
       - https://github.com/twibiral/obsidian-execute-code
       - https://github.com/Vinzent03/find-unlinked-files
       - https://github.com/Vinzent03/obsidian-advanced-uri
-      - https://github.com/weichenw/obsidian-hypothesis-plugin
-      - https://github.com/xryul/obsidian-image-converter
-      - https://github.com/YukiGasai/obsidian-google-calendar
-      - https://github.com/YukiGasai/obsidian-google-tasks
-      - https://github.com/zsviczian/excalibrain
-      - https://github.com/zsviczian/obsidian-excalidraw-plugin
+      # - https://github.com/weichenw/obsidian-hypothesis-plugin
+      # - https://github.com/xryul/obsidian-image-converter
+      # - https://github.com/YukiGasai/obsidian-google-calendar
+      # - https://github.com/YukiGasai/obsidian-google-tasks
+      # - https://github.com/zsviczian/excalibrain
+      # - https://github.com/zsviczian/obsidian-excalidraw-plugin
   # raycast: Manually install Raycast extensions - no CLI method
   steampipe:
     cmd: bash -c 'if [ ! -f /tmp/steampipe-plugin-list ]; then steampipe plugin list > /tmp/steampipe-plugin-list; fi && if ! cat /tmp/steampipe-plugin-list | grep "{PLUGIN}" > /dev/null; then steampipe plugin install "{PLUGIN}"; fi'
     plugins:
-      - algolia
-      - aws
-      - azure
-      - azuread
-      - azuredevops
-      - bitbucket
-      - buildkite
-      - cloudflare
+      # - algolia
+      # - aws
+      # - azure
+      # - azuread
+      # - azuredevops
+      # - bitbucket
+      # - buildkite
+      # - cloudflare
       - code
       - config
-      - consul
+      # - consul
       - csv
       - digitalocean
       - docker
-      - gcp
+      # - gcp
       - github
-      - googledirectory
-      - googlesheets
-      - googleworkspace
-      - grafana
+      # - googledirectory
+      # - googlesheets
+      # - googleworkspace
+      # - grafana
       - heroku
       - hibp
       - imap
       - ipinfo
-      - jira
-      - jumpcloud
-      - kubernetes
-      - ldap
+      # - jira
+      # - jumpcloud
+      # - kubernetes
+      # - ldap
       - linkedin
+      - mastodon
       - net
-      - nomad
-      - openai
-      - prometheus
+      # - nomad
+      # - openai
+      - openapi
+      # - prometheus
       - reddit
       - rss
-      - sentry
-      - shopify
-      - slack
-      - stripe
+      # - sentry
+      # - shopify
+      # - slack
+      # - stripe
       - tailscale
-      - terraform
-      - trivy
-      - twilio
+      # - terraform
+      # - trivy
+      # - twilio
+      - vercel
       - whois
-      - ernw/openstack
+      # - ernw/openstack
       - theapsgroup/gitlab
-      - theapsgroup/keycloak
-      - theapsgroup/vault
+      # - theapsgroup/keycloak
+      # - theapsgroup/vault
       - twitter
     update: steampipe plugin update --all
   teams:
@@ -1891,7 +1918,7 @@ softwarePlugins:
       # Dependency issues
       # - vagrant-openstack-provider
       # - vagrant-openstack
-      - vagrant-parallels
+      # - vagrant-parallels
       # Dependency issue
       # - vagrant-proxmox
       - vagrant-share
@@ -1901,7 +1928,7 @@ softwarePlugins:
   visual-studio:
     cmd: null # VSIXInstaller.exe can be used to install a local file. The first step is to download the plugin file. https://gist.github.com/ScottHutchinson/b22339c3d3688da5c9b477281e258400
     plugins:
-      - GitHub.copilotvs
+      # - GitHub.copilotvs
       - TemplateStudio.TemplateStudioForWinUICs
       - lepo.wpf-ui
   vim:
@@ -1911,7 +1938,7 @@ softwarePlugins:
       - https://github.com/editorconfig/editorconfig-vim.git
       - https://github.com/ekalinin/dockerfile.vim.git
       - https://github.com/fatih/vim-go.git
-      - https://github.com/github/copilot.vim
+      # - https://github.com/github/copilot.vim
       - https://github.com/hdima/python-syntax.git
       - https://github.com/junegunn/fzf.git
       - https://github.com/junegunn/fzf.vim.git
@@ -1920,7 +1947,7 @@ softwarePlugins:
       - https://github.com/Yggdroot/indentLine
       - https://github.com/nanotee/zoxide.vim.git
       - https://github.com/pangloss/vim-javascript.git
-      - https://github.com/pearofducks/ansible-vim.git
+      # - https://github.com/pearofducks/ansible-vim.git
       - https://github.com/plasticboy/vim-markdown.git
       - https://github.com/sheerun/vim-polyglot.git
       - https://github.com/prettier/vim-prettier.git
