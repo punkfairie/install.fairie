@@ -6333,7 +6333,7 @@ softwarePackages:
     _desc: "NativeScript empowers you to access native APIs from JavaScript directly."
     _github: https://github.com/NativeScript/NativeScript
     _name: NativeScript
-    npm: nativescript --ignore-scripts
+    npm: "@nativescript/core"
   nautilus-brasero:
     _github: false
     apt: nautilus-extension-brasero
