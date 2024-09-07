@@ -3542,7 +3542,6 @@ softwarePackages:
     _name: Gitmoji CLI
     npm: gitmoji-cli
     brew: gitmoji
-    npm: gitmoji-cli
   gitomatic:
     _bin: gitomatic
     _desc: "A tool to monitor git repositories and automatically pull & push changes"
