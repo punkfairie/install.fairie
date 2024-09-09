@@ -30,7 +30,7 @@ installerPreference:
     - ansible
     - binary
     - whalebrew
-  dnf:
+  fedora:
     - dnf
     - brew
     - go
@@ -53,7 +53,7 @@ installerPreference:
     - npm
     - gem
     - script
-  pacman:
+  arch:
     - pacman
     - yay
     - brew
@@ -98,7 +98,7 @@ installerPreference:
     - script
     - ansible
     - binary
-  zypper:
+  openSUSE:
     - zypper
     - brew
     - go
@@ -3795,7 +3795,7 @@ softwarePackages:
     _bin: gnutls-certtool
     _github: false
     brew: gnutls
-  go:
+  golang:
     _bin: go
     _desc: "Go is an open source programming language that makes it easy to build simple, reliable, and efficient software."
     _docs: https://go.dev/doc/
@@ -5068,7 +5068,7 @@ softwarePackages:
     _github: https://github.com/oguzhaninan/korkut
     _name: Korkut
     npm: korkut
-  krew:
+  kubctl-krew:
     _bin: kubectl-krew
     _desc: "📦 Find and install kubectl plugins"
     _github: https://github.com/kubernetes-sigs/krew
@@ -7517,7 +7517,7 @@ softwarePackages:
     _name: Pipelight
     cargo:linux: --git https://github.com/pipelight/pipelight
     yay: pipelight
-  pipx:
+  python-pipx:
     _bin: pipx
     _deprecated: The `pipx` installation is handled by the `install-program` program bundled with Install Doctor.
     _desc: "Install and Run Python Applications in Isolated Environments"
@@ -10704,7 +10704,7 @@ softwarePackages:
     apt: wget
     brew: wget
     dnf: wget
-  whalebrew:
+  docker-whalebrew:
     _bin: whalebrew
     _desc: "Homebrew, but with Docker images"
     _docs: https://github.com/whalebrew/whalebrew#usage

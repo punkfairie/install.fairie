@@ -361,7 +361,7 @@ softwareGroups:
     - watchexec
     # - watchman
     - wget
-    - whalebrew
+    - docker-whalebrew
     - wifi-password
     - yq
     - zoxide
@@ -685,7 +685,7 @@ softwareGroups:
     - yarnhook
   Go: &Go
     # - delve
-    - go
+    - golang
     - goreleaser
     # - go-outline
     - gomodifytags
@@ -702,7 +702,7 @@ softwareGroups:
     # - kdash
     # - kn
     # TODO: Check if some of these are installed by Krew and remove if they are
-    # - krew
+    # - kubectl-krew
     # - kubectx
     # - kubekey
     # - kubenav
@@ -936,7 +936,7 @@ softwareGroups:
     - php
   Package-Management: &Package-Management
     # - homebrew
-    - whalebrew
+    - docker-whalebrew
     - eget
     - gup
     - mise
@@ -959,6 +959,7 @@ softwareGroups:
     - flake8
     - isort
     # - mambaforge
+    - python-pipx
     - poetry
     - python
     - virtualenv
@@ -1306,7 +1307,7 @@ softwareGroups:
     # - gitlab-runner
     - gitomatic
     - glusterfs
-    - go
+    - golang
     - gomplate
     # - goofys
     # - gradle
