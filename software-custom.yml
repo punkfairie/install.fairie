@@ -27,13 +27,15 @@ softwarePackages:
     scoop: extras/vesktop
     dmg: https://vencord.dev/download/vesktop/universal/dmg
     apt: https://vencord.dev/download/vesktop/amd64/deb
-    script:darwin: >-
-      curl -sSL https://vencord.dev/download/vesktop/universal/dmg >
-      "/tmp/Vesktop.dmg"
-      && sudo hdiutil attach "/tmp/Vesktop.dmg"
-      && sudo cp -R "/Volumes/Vesktop 1.5.3-universal/Vesktop.app" /Applications
-      && sudo hdutil detach "/Volumes/Vesktop 1.5.3-universal"
-      && rm -rf "/tmp/Vesktop.dmg"
+    script:
+      darwin: >-
+        curl -sSL https://vencord.dev/download/vesktop/universal/dmg >
+        "/tmp/Vesktop.dmg"
+        && sudo hdiutil attach "/tmp/Vesktop.dmg"
+        && sudo cp -R "/Volumes/Vesktop 1.5.3-universal/Vesktop.app" /Applications
+        && sudo hdutil detach "/Volumes/Vesktop 1.5.3-universal"
+        && rm -rf "/tmp/Vesktop.dmg"
+
   fish-shell:
     _bin: fish
     _desc: >
@@ -113,6 +115,7 @@ softwarePackages:
     _docs: https://httpie.io/docs/desktop/httpie-web
     _github: https://github.com/httpie/desktop
     _home: https://httpie.io/desktop
+    _name: HTTPie Desktop
     cask: httpie
     yay: httpie-desktop-bin
     choco: httpie-desktop
@@ -122,6 +125,7 @@ softwarePackages:
     _bin: topgrade
     _desc: "Upgrade all the things"
     _github: https://github.com/topgrade-rs/topgrade
+    _name: topgrade
     yay: topgrade-bin
     choco: topgrade
     cargo: topgrade
@@ -136,6 +140,7 @@ softwarePackages:
       that can connect to XMPP (Jabber), IRC and more.
     _github: https://github.com/adium/adium
     _home: https://adium.im/
+    _name: Adium
     cask: adium
   pidgin:
     _bin: pidgin
@@ -143,6 +148,7 @@ softwarePackages:
       Pidgin is a chat program which lets you log into accounts on multiple chat
       networks simultaneously.
     _home: https://pidgin.im/
+    _name: Pidgin
     pacman: pidgin
     choco: pidgin
     apt: pidgin

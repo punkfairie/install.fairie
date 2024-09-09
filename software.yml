@@ -482,8 +482,9 @@ softwarePackages:
     _post: |
       aqua update-aqua
       aqua install -a
-    binary:linux: https://github.com/aquaproj/aqua/releases/download/v2.0.0-0/aqua_linux_amd64.tar.gz
-    binary:windows: https://github.com/aquaproj/aqua/releases/download/v2.0.0-0/aqua_windows_amd64.tar.gz
+    binary:
+      linux: https://github.com/aquaproj/aqua/releases/download/v2.0.0-0/aqua_linux_amd64.tar.gz
+      windows: https://github.com/aquaproj/aqua/releases/download/v2.0.0-0/aqua_windows_amd64.tar.gz
     brew: aquaproj/aqua/aqua
     go: github.com/aquaproj/aqua/v2/cmd/aqua@latest
   arduino-ide:
@@ -681,9 +682,10 @@ softwarePackages:
     _github: https://github.com/aws/aws-cli
     _home: https://aws.amazon.com/
     _name: AWS CLI
-    binary:darwin: https://awscli.amazonaws.com/AWSCLIV2.pkg
-    binary:linux: https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip
-    binary:windows: https://awscli.amazonaws.com/AWSCLIV2.msi
+    binary:
+      darwin: https://awscli.amazonaws.com/AWSCLIV2.pkg
+      linux: https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip
+      windows: https://awscli.amazonaws.com/AWSCLIV2.msi
     brew: awscli@2
     choco: awscli
   awxcli:
@@ -1465,7 +1467,8 @@ softwarePackages:
     _desc: "Cloudflare Tunnel client (formerly Argo Tunnel)"
     _github: https://github.com/cloudflare/cloudflared
     _name: CloudFlared
-    binary:linux: https://github.com/cloudflare/cloudflared/releases/latest/download/cloudflared-linux-amd64
+    binary:
+      linux: https://github.com/cloudflare/cloudflared/releases/latest/download/cloudflared-linux-amd64
     brew:darwin: cloudflare/cloudflare/cloudflared
     github: github.com/cloudflare/cloudflared
   cmake:
@@ -1570,7 +1573,8 @@ softwarePackages:
     _usesDocker: true
     brew: codeclimate/formulae/codeclimate
     brew:darwin: codeclimate/formulae/codeclimate
-    script:linux: cd /tmp && curl -L https://github.com/codeclimate/codeclimate/archive/master.tar.gz | tar xvz && cd codeclimate-* && sudo make install
+    script:
+      linux: cd /tmp && curl -L https://github.com/codeclimate/codeclimate/archive/master.tar.gz | tar xvz && cd codeclimate-* && sudo make install
   codeedit:
     _app: CodeEdit.app
     _bin: codeedit
@@ -1623,8 +1627,9 @@ softwarePackages:
     choco: composer
     pacman: composer
     scoop: composer
-    script:darwin: cd ~ && curl -sS https://getcomposer.org/installer | php && sudo mv composer.phar /usr/local/bin/composer &&  sudo chmod +x /usr/local/bin/composer
-    script:linux: cd ~ && curl -sS https://getcomposer.org/installer | php && sudo mv composer.phar /usr/local/bin/composer &&  sudo chmod +x /usr/local/bin/composer
+    script:
+      darwin: cd ~ && curl -sS https://getcomposer.org/installer | php && sudo mv composer.phar /usr/local/bin/composer &&  sudo chmod +x /usr/local/bin/composer
+      linux: cd ~ && curl -sS https://getcomposer.org/installer | php && sudo mv composer.phar /usr/local/bin/composer &&  sudo chmod +x /usr/local/bin/composer
   confd:
     _bin: confd
     _desc: "Manage local application configuration files using templates and data from etcd or consul"
@@ -1965,9 +1970,10 @@ softwarePackages:
     _home: https://www.deta.sh/
     _name: deta
     github: github.com/deta/deta-cli
-    script:darwin: curl -fsSL https://get.deta.dev/cli.sh | sh
-    script:linux: curl -fsSL https://get.deta.dev/cli.sh | sh
-    script:windows: iwr https://get.deta.dev/cli.ps1 -useb | iex
+    script:
+      darwin: curl -fsSL https://get.deta.dev/cli.sh | sh
+      linux: curl -fsSL https://get.deta.dev/cli.sh | sh
+      windows: iwr https://get.deta.dev/cli.ps1 -useb | iex
   devbox:
     _bin: devbox
     _desc: "Devbox is a command-line tool that lets you easily create isolated shells for development."
@@ -2106,7 +2112,8 @@ softwarePackages:
       - docker-ce
       - docker-ce-cli
       - docker-compose-plugin
-    script:darwin: echo "Docker CLI installed by Docker Desktop on macOS"
+    script:
+      darwin: echo "Docker CLI installed by Docker Desktop on macOS"
     zypper:
       - containerd.io
       - docker-ce
@@ -2275,9 +2282,10 @@ softwarePackages:
     cargo: dprint
     npm: dprint
     scoop: dprint
-    script:darwin: curl -fsSL https://dprint.dev/install.sh | sh
-    script:linux: curl -fsSL https://dprint.dev/install.sh | sh
-    script:windows: iwr https://dprint.dev/install.ps1 -useb | iex
+    script:
+      darwin: curl -fsSL https://dprint.dev/install.sh | sh
+      linux: curl -fsSL https://dprint.dev/install.sh | sh
+      windows: iwr https://dprint.dev/install.ps1 -useb | iex
   drawing:
     _bin: drawing
     _desc: "This simple image editor, similar to Microsoft Paint, is aiming at the GNOME desktop."
@@ -2370,7 +2378,8 @@ softwarePackages:
       ee config set le-mail "$(get-secret CLOUDFLARE_EMAIL)"
       ee config set cloudflare-api-key "$(get-secret CLOUDFLARE_API_KEY)"
     brew: easyengine
-    script:linux: wget -qO ee rt.cx/ee4 && sudo bash ee
+    script:
+      linux: wget -qO ee rt.cx/ee4 && sudo bash ee
   edex-ui:
     _app: eDEX-UI.app
     _bin: edex-ui
@@ -2498,12 +2507,15 @@ softwarePackages:
     _desc: "EnvPane - An OS X preference pane for environment variables"
     _github: https://github.com/hschmidt/EnvPane
     _name: EnvPane
-    _when:script:darwin: '! test -d "$HOME/Library/PreferencePanes/EnvPane.prefPane"'
-    script:darwin: |
-      mkdir -p ~/Library/PreferencePanes
-      cd ~/Library/PreferencePanes
-      rm -rf EnvPane.prefPane
-      curl -sL https://github.com/hschmidt/EnvPane/releases/download/releases%2F0.8/EnvPane-0.8.tar.bz2 | tar -xjf -
+    _when:
+      script:
+        darwin: '! test -d "$HOME/Library/PreferencePanes/EnvPane.prefPane"'
+    script:
+      darwin: |
+        mkdir -p ~/Library/PreferencePanes
+        cd ~/Library/PreferencePanes
+        rm -rf EnvPane.prefPane
+        curl -sL https://github.com/hschmidt/EnvPane/releases/download/releases%2F0.8/EnvPane-0.8.tar.bz2 | tar -xjf -
   eslint:
     _bin: eslint
     _desc: "Find and fix problems in your JavaScript code."
@@ -2910,8 +2922,9 @@ softwarePackages:
     exe: https://github.com/fission/fission/releases/download/v1.19.0/fission-v1.19.0-windows-amd64.exe
     github: github.com/fission/fission
     nix-env: nixos.fission
-    script:darwin: cd /tmp && curl -sSLo fission https://github.com/fission/fission/releases/download/v1.19.0/fission-v1.19.0-darwin-amd64 && chmod +x fission && sudo mv fission /usr/local/bin/
-    script:linux: cd /tmp && curl -sSLo fission https://github.com/fission/fission/releases/download/v1.19.0/fission-v1.19.0-linux-amd64 && chmod +x fission && sudo mv fission /usr/local/bin/
+    script:
+      darwin: cd /tmp && curl -sSLo fission https://github.com/fission/fission/releases/download/v1.19.0/fission-v1.19.0-darwin-amd64 && chmod +x fission && sudo mv fission /usr/local/bin/
+      linux: cd /tmp && curl -sSLo fission https://github.com/fission/fission/releases/download/v1.19.0/fission-v1.19.0-linux-amd64 && chmod +x fission && sudo mv fission /usr/local/bin/
   fkill:
     _bin: fkill
     _desc: "Fabulously kill processes. Cross-platform."
@@ -4520,7 +4533,8 @@ softwarePackages:
     _name: Imagine
     appimage: meowtec/Imagine
     exe: https://github.com/meowtec/Imagine/releases/download/v0.7.4/Imagine-Setup-0.7.4.exe
-    script:darwin: curl -sSL https://github.com/meowtec/Imagine/releases/download/v0.7.4/Imagine-0.7.4.dmg > /tmp/Imagine.dmg && sudo hdiutil attach /tmp/Imagine.dmg && sudo cp -R "/Volumes/Imagine 0.7.4/Imagine.app" /Applications && sudo hdiutil detach "/Volumes/Imagine 0.7.4" && rm -f /tmp/Imagine.dmg
+    script:
+      darwin: curl -sSL https://github.com/meowtec/Imagine/releases/download/v0.7.4/Imagine-0.7.4.dmg > /tmp/Imagine.dmg && sudo hdiutil attach /tmp/Imagine.dmg && sudo cp -R "/Volumes/Imagine 0.7.4/Imagine.app" /Applications && sudo hdiutil detach "/Volumes/Imagine 0.7.4" && rm -f /tmp/Imagine.dmg
   imgur-uploader:
     _bin: imgur-uploader
     _desc: "Upload images to Imgur"
@@ -4899,39 +4913,40 @@ softwarePackages:
     _desc: "Modern VNC Server and client, web based and secure"
     _github: https://github.com/kasmtech/KasmVNC
     _name: KasmVNC
-    script:linux: |
-      RELEASES=$(curl -sS "https://api.github.com/repos/kasmtech/KasmVNC/releases/latest") || :
-      LATEST_VERSION=$(echo $RELEASES | grep -o '"tag_name": "[^"]*' | grep -o '[^"]*$') || :
-      if command -v apt-get > /dev/null; then
-        . /etc/os-release
-        cd /tmp
-        case $VERSION_CODENAME in
-        bullseye )
-          wget "https://github.com/kasmtech/KasmVNC/releases/download/$LATEST_VERSION/kasmvncserver_bullseye_${LATEST_VERSION:1}_amd64.deb" || :
-          ;;
-        buster )
-          wget "https://github.com/kasmtech/KasmVNC/releases/download/$LATEST_VERSION/kasmvncserver_buster_${LATEST_VERSION:1}_amd64.deb" || :
-          ;;
-        focal )
-          wget "https://github.com/kasmtech/KasmVNC/releases/download/$LATEST_VERSION/kasmvncserver_focal_${LATEST_VERSION:1}_amd64.deb" || :
-          ;;
-        jammy )
-          wget "https://github.com/kasmtech/KasmVNC/releases/download/$LATEST_VERSION/kasmvncserver_jammy_${LATEST_VERSION:1}_amd64.deb" || :
-          ;;
-        * )
-          ;;
-        esac
-        if ls kasmvncserver*.deb > /dev/null 2>&1; then sudo apt-get install ./kasmvncserver_*.deb; sudo addgroup $USER ssl-cert; fi
-      elif command -v dnf > /dev/null; then
-        wget "https://github.com/kasmtech/KasmVNC/releases/download/$LATEST_VERSION/kasmvncserver_centos_core_${LATEST_VERSION:1}_x86_64.rpm" || :
-        if ls kasmvncserver*.rpm > /dev/null 2>&1; then sudo rpm -ivh ./kasmvncserver_*.rpm; sudo usermod -a -G kasmvnc-cert $USER; fi
-      elif command -v zypper > /dev/null; then
-        wget "https://github.com/kasmtech/KasmVNC/releases/download/$LATEST_VERSION/kasmvncserver_opensuse_15_${LATEST_VERSION:1}_x86_64.rpm" || :
-        if ls kasmvncserver*.rpm > /dev/null 2>&1; then sudo rpm -ivh ./kasmvncserver_*.rpm; sudo usermod -a -G kasmvnc-cert $USER; fi
-      elif command -v apk > /dev/null; then
-        wget "https://github.com/kasmtech/KasmVNC/releases/download/$LATEST_VERSION/kasmvnc.alpine_317_x86_64.tgz" || :
-        if ls kasmvncserver*.rpm > /dev/null 2>&1; then sudo tar -xzf "./kasmvnc.alpine_317_x86_64.tgz" -C /; fi
-      fi
+    script:
+      linux: |
+        RELEASES=$(curl -sS "https://api.github.com/repos/kasmtech/KasmVNC/releases/latest") || :
+        LATEST_VERSION=$(echo $RELEASES | grep -o '"tag_name": "[^"]*' | grep -o '[^"]*$') || :
+        if command -v apt-get > /dev/null; then
+          . /etc/os-release
+          cd /tmp
+          case $VERSION_CODENAME in
+          bullseye )
+            wget "https://github.com/kasmtech/KasmVNC/releases/download/$LATEST_VERSION/kasmvncserver_bullseye_${LATEST_VERSION:1}_amd64.deb" || :
+            ;;
+          buster )
+            wget "https://github.com/kasmtech/KasmVNC/releases/download/$LATEST_VERSION/kasmvncserver_buster_${LATEST_VERSION:1}_amd64.deb" || :
+            ;;
+          focal )
+            wget "https://github.com/kasmtech/KasmVNC/releases/download/$LATEST_VERSION/kasmvncserver_focal_${LATEST_VERSION:1}_amd64.deb" || :
+            ;;
+          jammy )
+            wget "https://github.com/kasmtech/KasmVNC/releases/download/$LATEST_VERSION/kasmvncserver_jammy_${LATEST_VERSION:1}_amd64.deb" || :
+            ;;
+          * )
+            ;;
+          esac
+          if ls kasmvncserver*.deb > /dev/null 2>&1; then sudo apt-get install ./kasmvncserver_*.deb; sudo addgroup $USER ssl-cert; fi
+        elif command -v dnf > /dev/null; then
+          wget "https://github.com/kasmtech/KasmVNC/releases/download/$LATEST_VERSION/kasmvncserver_centos_core_${LATEST_VERSION:1}_x86_64.rpm" || :
+          if ls kasmvncserver*.rpm > /dev/null 2>&1; then sudo rpm -ivh ./kasmvncserver_*.rpm; sudo usermod -a -G kasmvnc-cert $USER; fi
+        elif command -v zypper > /dev/null; then
+          wget "https://github.com/kasmtech/KasmVNC/releases/download/$LATEST_VERSION/kasmvncserver_opensuse_15_${LATEST_VERSION:1}_x86_64.rpm" || :
+          if ls kasmvncserver*.rpm > /dev/null 2>&1; then sudo rpm -ivh ./kasmvncserver_*.rpm; sudo usermod -a -G kasmvnc-cert $USER; fi
+        elif command -v apk > /dev/null; then
+          wget "https://github.com/kasmtech/KasmVNC/releases/download/$LATEST_VERSION/kasmvnc.alpine_317_x86_64.tgz" || :
+          if ls kasmvncserver*.rpm > /dev/null 2>&1; then sudo tar -xzf "./kasmvnc.alpine_317_x86_64.tgz" -C /; fi
+        fi
     yay: kasmvncserver-bin
   kcpassword:
     _bin: kcpassword
@@ -5722,7 +5737,8 @@ softwarePackages:
     _post: echo y | conda update -n base -c conda-forge conda
     cask: mambaforge
     choco: mambaforge
-    script:linux: bash <(curl -L -O "https://github.com/conda-forge/miniforge/releases/latest/download/Mambaforge-$(uname)-$(uname -m).sh")
+    script:
+      linux: bash <(curl -L -O "https://github.com/conda-forge/miniforge/releases/latest/download/Mambaforge-$(uname)-$(uname -m).sh")
   manta:
     _app: Manta.app
     _bin: null
@@ -5839,8 +5855,9 @@ softwarePackages:
     _name: McFly
     brew: mcfly
     port: mcfly
-    script:darwin: curl -LSfs https://raw.githubusercontent.com/cantino/mcfly/master/ci/install.sh | sh -s -- --git cantino/mcfly
-    script:linux: curl -LSfs https://raw.githubusercontent.com/cantino/mcfly/master/ci/install.sh | sh -s -- --git cantino/mcfly
+    script:
+      darwin: curl -LSfs https://raw.githubusercontent.com/cantino/mcfly/master/ci/install.sh | sh -s -- --git cantino/mcfly
+      linux: curl -LSfs https://raw.githubusercontent.com/cantino/mcfly/master/ci/install.sh | sh -s -- --git cantino/mcfly
   medis:
     _app: Medis.app
     _bin: medis
@@ -5929,14 +5946,15 @@ softwarePackages:
     _github: https://github.com/microsoft/VFSForGit
     _name: Microsoft Git (with Git VFS)
     cask: microsoft/git/microsoft-git
-    script:linux: |
-      #!/usr/bin/env bash
-      mkdir -p "$HOME/.local/src"
-      rm -rf "$HOME/.local/src/microsoft-git"
-      git clone https://github.com/microsoft/git "$HOME/.local/src/microsoft-git"
-      cd "$HOME/.local/src/microsoft-git"
-      make -j12 prefix=/usr/local
-      sudo make -j12 prefix=/usr/local install
+    script:
+      linux: |
+        #!/usr/bin/env bash
+        mkdir -p "$HOME/.local/src"
+        rm -rf "$HOME/.local/src/microsoft-git"
+        git clone https://github.com/microsoft/git "$HOME/.local/src/microsoft-git"
+        cd "$HOME/.local/src/microsoft-git"
+        make -j12 prefix=/usr/local
+        sudo make -j12 prefix=/usr/local install
     winget: microsoft.git
   microsoft-office:
     _app: Microsoft Word.app
@@ -6922,7 +6940,8 @@ softwarePackages:
       sudo udevadm control --reload-rules
       sudo udevadm trigger
     choco: onlykey
-    script:darwin: cd /tmp && curl -sSL https://github.com/trustcrypto/OnlyKey-App/releases/download/v5.3.6/OnlyKey.App.5.3.6.dmg > OnlyKey.dmg  && hdiutil attach "/tmp/OnlyKey.dmg" &&  sudo cp -R "/Volumes/OnlyKey App/OnlyKey App.app" /Applications && sudo hdiutil detach "/Volumes/OnlyKey App" && rm -f "/tmp/OnlyKey.dmg"
+    script:
+      darwin: cd /tmp && curl -sSL https://github.com/trustcrypto/OnlyKey-App/releases/download/v5.3.6/OnlyKey.App.5.3.6.dmg > OnlyKey.dmg  && hdiutil attach "/tmp/OnlyKey.dmg" &&  sudo cp -R "/Volumes/OnlyKey App/OnlyKey App.app" /Applications && sudo hdiutil detach "/Volumes/OnlyKey App" && rm -f "/tmp/OnlyKey.dmg"
     snap: onlykey-app
   onlykey-agent:
     _bin: onlykey-agent
@@ -7703,9 +7722,10 @@ softwarePackages:
     _github: https://github.com/getporter/porter
     _home: https://getporter.org/
     _name: Porter
-    script:darwin: curl -L https://cdn.porter.sh/latest/install-mac.sh | bash
-    script:linux: curl -L https://cdn.porter.sh/latest/install-linux.sh | bash
-    script:windows: iwr "https://cdn.porter.sh/latest/install-windows.ps1" -UseBasicParsing | iex
+    script:
+      darwin: curl -L https://cdn.porter.sh/latest/install-mac.sh | bash
+      linux: curl -L https://cdn.porter.sh/latest/install-linux.sh | bash
+      windows: iwr "https://cdn.porter.sh/latest/install-windows.ps1" -UseBasicParsing | iex
   portmaster:
     _bin: null
     _desc: "🏔 Love Freedom - ❌ Block Mass Surveillance"
@@ -7730,7 +7750,8 @@ softwarePackages:
     dnf: postfix
     pacman: postfix
     port: postfix
-    script:darwin: echo "Postfix is included by macOS already"
+    script:
+      darwin: echo "Postfix is included by macOS already"
   postgresql:
     _bin: postgresql
     _desc: "PostgreSQL is an advanced object-relational database management system that supports an extended subset of the SQL standard, including transactions, foreign keys, subqueries, triggers, user-defined types and functions."
@@ -7841,7 +7862,8 @@ softwarePackages:
     _name: Privaxy
     appimage: barre/privaxy
     apt: https://github.com/Barre/privaxy/releases/download/v0.5.2/privaxy_0.5.2_amd64.deb
-    script:darwin: curl -sSL https://github.com/Barre/privaxy/releases/download/v0.5.2/Privaxy_0.5.2_universal.dmg > /tmp/Privaxy.dmg && sudo hdiutil attach /tmp/Privaxy.dmg && sudo cp -R /Volumes/Privaxy/Privaxy.app /Applications && sudo hdiutil detach /Volumes/Privaxy && rm -f /tmp/Privaxy.dmg
+    script:
+      darwin: curl -sSL https://github.com/Barre/privaxy/releases/download/v0.5.2/Privaxy_0.5.2_universal.dmg > /tmp/Privaxy.dmg && sudo hdiutil attach /tmp/Privaxy.dmg && sudo cp -R /Volumes/Privaxy/Privaxy.app /Applications && sudo hdiutil detach /Volumes/Privaxy && rm -f /tmp/Privaxy.dmg
   privileges:
     _app: Privileges.app
     _bin: privileges
@@ -8282,12 +8304,13 @@ softwarePackages:
     pacman: rclone
     port: rclone
     scoop: rclone
-    script:darwin: |
-      #!/usr/bin/env bash
-      TMP="$(mktemp)"
-      curl https://rclone.org/install.sh > "$TMP"
-      sudo bash "$TMP"
-      rm -f "$TMP"
+    script:
+      darwin: |
+        #!/usr/bin/env bash
+        TMP="$(mktemp)"
+        curl https://rclone.org/install.sh > "$TMP"
+        sudo bash "$TMP"
+        rm -f "$TMP"
   recoverpy:
     _bin: recoverpy
     _deps:
@@ -8300,7 +8323,8 @@ softwarePackages:
     _github: https://github.com/PabloLec/RecoverPy
     _name: RecoverPy
     _when: echo '! pip3 list | grep recoverpy > /dev/null' | bash
-    script:linux: python3 -m pip install recoverpy
+    script:
+      linux: python3 -m pip install recoverpy
   recuva:
     _bin: recuva
     _desc: "Recuva recovers files from your Windows computer, recycle bin, digital camera card, or MP3 player!"
@@ -8584,8 +8608,9 @@ softwarePackages:
       - cargo
       - rust
     scoop: rust
-    script:darwin: curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh -s -- -y
-    script:linux: curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh -s -- -y
+    script:
+      darwin: curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh -s -- -y
+      linux: curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh -s -- -y
   rustdesk:
     _app: RustDesk.app
     _bin: rustdesk
@@ -8657,8 +8682,9 @@ softwarePackages:
     _name: Sake
     brew: alajmo/sake/sake
     go: github.com/alajmo/sake@latest
-    script:darwin: curl -sfL https://raw.githubusercontent.com/alajmo/sake/main/install.sh | sh
-    script:linux: curl -sfL https://raw.githubusercontent.com/alajmo/sake/main/install.sh | sh
+    script:
+      darwin: curl -sfL https://raw.githubusercontent.com/alajmo/sake/main/install.sh | sh
+      linux: curl -sfL https://raw.githubusercontent.com/alajmo/sake/main/install.sh | sh
   samba:
     _bin: smbd
     _bin:dnf: smb
@@ -8705,11 +8731,12 @@ softwarePackages:
     _name: Sapling
     brew: sapling
     pacman: sapling-scm-bin
-    script:windows: |
-      curl -sSL https://github.com/facebook/sapling/releases/latest > ~/Downloads/sapling_windows_0.2.20231113-145254+995db0d6_amd64.zip
-      Expand-Archive ~/Downloads/sapling_windows_0.2.20231113-145254+995db0d6_amd64.zip 'C:\Program Files'
-      setx PATH "$env:PATH;C:\Program Files\Sapling" -m
-      Set-Alias -Name sl -Value 'C:\Program Files\Sapling\sl.exe' -Force -Option Constant,ReadOnly,AllScope
+    script:
+      windows: |
+        curl -sSL https://github.com/facebook/sapling/releases/latest > ~/Downloads/sapling_windows_0.2.20231113-145254+995db0d6_amd64.zip
+        Expand-Archive ~/Downloads/sapling_windows_0.2.20231113-145254+995db0d6_amd64.zip 'C:\Program Files'
+        setx PATH "$env:PATH;C:\Program Files\Sapling" -m
+        Set-Alias -Name sl -Value 'C:\Program Files\Sapling\sl.exe' -Force -Option Constant,ReadOnly,AllScope
   scap-security-guide:
     _bin: oscap
     _desc: "Security automation content in SCAP, Bash, Ansible, and other formats."
@@ -8899,8 +8926,9 @@ softwarePackages:
     _name: SFTPGo Authentication Plugin
     _post: sudo cp -f $(which sftpgo-plugin-auth) /usr/local/bin/sftpgo-plugin-auth
     go: github.com/sftpgo/sftpgo-plugin-auth@latest
-    script:darwin: curl -sSf https://github.com/sftpgo/sftpgo-plugin-auth/releases/download/v1.0.4/sftpgo-plugin-auth-darwin-amd64 -o /usr/local/bin/sftpgo-plugin-auth
-    script:linux: curl -sSf https://github.com/sftpgo/sftpgo-plugin-auth/releases/download/v1.0.4/sftpgo-plugin-auth-linux-amd64 -o /usr/local/bin/sftpgo-plugin-auth
+    script:
+      darwin: curl -sSf https://github.com/sftpgo/sftpgo-plugin-auth/releases/download/v1.0.4/sftpgo-plugin-auth-darwin-amd64 -o /usr/local/bin/sftpgo-plugin-auth
+      linux: curl -sSf https://github.com/sftpgo/sftpgo-plugin-auth/releases/download/v1.0.4/sftpgo-plugin-auth-linux-amd64 -o /usr/local/bin/sftpgo-plugin-auth
   share:
     _bin: share
     _desc: "🌍 Quickly share files from your command line"
@@ -8930,14 +8958,15 @@ softwarePackages:
     _name: shc
     brew: shc
     port: shc
-    script:linux: |
-      #!/usr/bin/env bash
-      if command -v apt &>/dev/null
-      then
-        sudo add-apt-repository ppa:neurobin/ppa
-        sudo apt-get update
-        sudo apt-get install shc
-      end
+    script:
+      linux: |
+        #!/usr/bin/env bash
+        if command -v apt &>/dev/null
+        then
+          sudo add-apt-repository ppa:neurobin/ppa
+          sudo apt-get update
+          sudo apt-get install shc
+        end
   shdoc:
     _bin: shdoc
     _deps:script:
@@ -8945,8 +8974,9 @@ softwarePackages:
     _desc: "Documentation generator for shell scripts (bash, sh, zsh)."
     _github: https://github.com/reconquest/shdoc
     _name: shdoc
-    script:darwin: cd /tmp && git clone --recursive https://github.com/reconquest/shdoc && cd shdoc && sudo make install && cd /tmp && sudo rm -rf shdoc
-    script:linux: cd /tmp && git clone --recursive https://github.com/reconquest/shdoc && cd shdoc && sudo make install && cd /tmp && sudo rm -rf shdoc
+    script:
+      darwin: cd /tmp && git clone --recursive https://github.com/reconquest/shdoc && cd shdoc && sudo make install && cd /tmp && sudo rm -rf shdoc
+      linux: cd /tmp && git clone --recursive https://github.com/reconquest/shdoc && cd shdoc && sudo make install && cd /tmp && sudo rm -rf shdoc
     yay: shdoc-git
   sheldon:
     _bin: sheldon
@@ -9611,7 +9641,8 @@ softwarePackages:
     bin: https://github.com/joehillen/sysz
     nix-env: nixpkgs.sysz
     pacman: sysz
-    script:linux: cd /tmp && git clone https://github.com/joehillen/sysz.git && cd sysz && sudo make install && cd /tmp && rm -rf sysz
+    script:
+      linux: cd /tmp && git clone https://github.com/joehillen/sysz.git && cd sysz && sudo make install && cd /tmp && rm -rf sysz
   t:
     _bin: t
     _desc: "A command-line power tool for Twitter"
@@ -10144,7 +10175,8 @@ softwarePackages:
     _github: https://github.com/ariasmn/ugm
     _name: ugm
     go:linux: github.com/ariasmn/ugm@latest
-    script:linux: curl -o ~/.local/bin/ugm https://github.com/ariasmn/ugm/releases/download/v1.5.0/ugm_1.5.0_linux_arm64
+    script:
+      linux: curl -o ~/.local/bin/ugm https://github.com/ariasmn/ugm/releases/download/v1.5.0/ugm_1.5.0_linux_arm64
   ultra:
     _bin: ultra
     _desc: "🏃⛰ Ultra fast monorepo script runner and build tool"
@@ -10310,8 +10342,9 @@ softwarePackages:
     brew: vectordotdev/brew/vector
     helm: https://helm.vector.dev
     pacman: vector
-    script:darwin: curl --proto '=https' --tlsv1.2 -sSf https://sh.vector.dev | bash
-    script:linux: curl --proto '=https' --tlsv1.2 -sSf https://sh.vector.dev | bash
+    script:
+      darwin: curl --proto '=https' --tlsv1.2 -sSf https://sh.vector.dev | bash
+      linux: curl --proto '=https' --tlsv1.2 -sSf https://sh.vector.dev | bash
   velero:
     _bin: velero
     _desc: "Backup and migrate Kubernetes applications and their persistent volumes"
@@ -10434,23 +10467,24 @@ softwarePackages:
     _home: https://www.vmware.com/
     _name: VMWare
     cask: vmware-fusion
-    script:linux: |
-      if ! command -v vmware > /dev/null; then
-        ### Download VMWare Workstation
-        VMWARE_WORKSTATION_URL=https://www.vmware.com/go/getworkstation-linux
-        VMWARE_WORKSTATION_DIR=/tmp/workstation-downloads
-        mkdir -p "$VMWARE_WORKSTATION_DIR"
-        gum log -sl info 'Downloading VMware Workstation Installer' && curl -sSLA "Mozilla/5.0 (X11; Linux x86_64; rv:102.0) Gecko/20220101 Firefox/102.0" "$VMWARE_WORKSTATION_URL" -o "$VMWARE_WORKSTATION_DIR/tryworkstation-linux-64.sh"
-        ### Register product key / license
-        if [ -n "$VMWARE_WORKSTATION_LICENSE_KEY" ]; then
-          gum log -sl info 'Registering VMware Workstation Pro license with serial number' && sudo "$VMWARE_WORKSTATION_DIR/tryworkstation-linux-64.sh" --eulas-agreed --console --required --set-setting vmware-workstation serialNumber "$VMWARE_WORKSTATION_LICENSE_KEY"
+    script:
+      linux: |
+        if ! command -v vmware > /dev/null; then
+          ### Download VMWare Workstation
+          VMWARE_WORKSTATION_URL=https://www.vmware.com/go/getworkstation-linux
+          VMWARE_WORKSTATION_DIR=/tmp/workstation-downloads
+          mkdir -p "$VMWARE_WORKSTATION_DIR"
+          gum log -sl info 'Downloading VMware Workstation Installer' && curl -sSLA "Mozilla/5.0 (X11; Linux x86_64; rv:102.0) Gecko/20220101 Firefox/102.0" "$VMWARE_WORKSTATION_URL" -o "$VMWARE_WORKSTATION_DIR/tryworkstation-linux-64.sh"
+          ### Register product key / license
+          if [ -n "$VMWARE_WORKSTATION_LICENSE_KEY" ]; then
+            gum log -sl info 'Registering VMware Workstation Pro license with serial number' && sudo "$VMWARE_WORKSTATION_DIR/tryworkstation-linux-64.sh" --eulas-agreed --console --required --set-setting vmware-workstation serialNumber "$VMWARE_WORKSTATION_LICENSE_KEY"
+          else
+            gum log -sl info 'Agreeing to VMWare Workstation Pro license (without serial number)' && sudo "$VMWARE_WORKSTATION_DIR/tryworkstation-linux-64.sh" --eulas-agreed --console --required
+          fi
+          gum log -sl info 'VMware Workstation installed successfully'
         else
-          gum log -sl info 'Agreeing to VMWare Workstation Pro license (without serial number)' && sudo "$VMWARE_WORKSTATION_DIR/tryworkstation-linux-64.sh" --eulas-agreed --console --required
+          gum log -sl info 'VMware Workstation is already installed'
         fi
-        gum log -sl info 'VMware Workstation installed successfully'
-      else
-        gum log -sl info 'VMware Workstation is already installed'
-      fi
   volta:
     _bin: volta
     _desc: "The Hassle-Free JavaScript Tool Manager"
@@ -10678,8 +10712,9 @@ softwarePackages:
     _home: https://github.com/whalebrew/whalebrew
     _name: Whalebrew
     brew: whalebrew
-    script:darwin: curl -L "https://github.com/whalebrew/whalebrew/releases/download/0.4.0/whalebrew-$(uname -s)-$(uname -m)" -o /usr/local/bin/whalebrew; chmod +x /usr/local/bin/whalebrew
-    script:linux: curl -L "https://github.com/whalebrew/whalebrew/releases/download/0.4.0/whalebrew-$(uname -s)-$(uname -m)" -o /usr/local/bin/whalebrew; chmod +x /usr/local/bin/whalebrew
+    script:
+      darwin: curl -L "https://github.com/whalebrew/whalebrew/releases/download/0.4.0/whalebrew-$(uname -s)-$(uname -m)" -o /usr/local/bin/whalebrew; chmod +x /usr/local/bin/whalebrew
+      linux: curl -L "https://github.com/whalebrew/whalebrew/releases/download/0.4.0/whalebrew-$(uname -s)-$(uname -m)" -o /usr/local/bin/whalebrew; chmod +x /usr/local/bin/whalebrew
   what-ip:
     _bin: whatip
     _desc: "Info on your IP"
@@ -11187,22 +11222,23 @@ softwarePackages:
     apt: https://github.com/th-ch/youtube-music/releases/download/v1.19.0/youtube-music_1.19.0_amd64.deb
     exe: https://github.com/th-ch/youtube-music/releases/download/v1.19.0/YouTube-Music-Setup-1.19.0.exe
     scoop: extras/youtube-music
-    script:darwin: |
-      DL_URL="https://github.com/th-ch/youtube-music/releases/download/v1.20.0/YouTube-Music-1.20.0.dmg"
-      if [ $(arch) = 'arm64' ]; then
-        DL_URL="https://github.com/th-ch/youtube-music/releases/download/v1.20.0/YouTube-Music-1.20.0-arm64.dmg"
-      fi
-      echo "Downloading YouTube Music" && curl -sSL "$DL_URL" > /tmp/YouTube-Music.dmg
-      echo "Attaching volume" && sudo hdiutil attach /tmp/YouTube-Music.dmg
-      echo "Copying to /Applications"
-      if [ -d "/Volumes/YouTube Music 1.20.0" ]; then
-        sudo cp -R "/Volumes/YouTube Music 1.20.0/YouTube Music.app" /Applications
-        echo "Detaching" && sudo hdiutil detach "/Volumes/YouTube Music 1.20.0"
-      elif [ -d "/Volumes/YouTube Music 1.20.0-arm64" ]; then
-        sudo cp -R "/Volumes/YouTube Music 1.20.0-arm64/YouTube Music.app" /Applications
-        echo "Detaching" && sudo hdiutil detach "/Volumes/YouTube Music 1.20.0-arm64"
-      fi
-      echo "Removing /tmp/YouTube-Music.dmg" && rm -f /tmp/YouTube-Music.dmg
+    script:
+      darwin: |
+        DL_URL="https://github.com/th-ch/youtube-music/releases/download/v1.20.0/YouTube-Music-1.20.0.dmg"
+        if [ $(arch) = 'arm64' ]; then
+          DL_URL="https://github.com/th-ch/youtube-music/releases/download/v1.20.0/YouTube-Music-1.20.0-arm64.dmg"
+        fi
+        echo "Downloading YouTube Music" && curl -sSL "$DL_URL" > /tmp/YouTube-Music.dmg
+        echo "Attaching volume" && sudo hdiutil attach /tmp/YouTube-Music.dmg
+        echo "Copying to /Applications"
+        if [ -d "/Volumes/YouTube Music 1.20.0" ]; then
+          sudo cp -R "/Volumes/YouTube Music 1.20.0/YouTube Music.app" /Applications
+          echo "Detaching" && sudo hdiutil detach "/Volumes/YouTube Music 1.20.0"
+        elif [ -d "/Volumes/YouTube Music 1.20.0-arm64" ]; then
+          sudo cp -R "/Volumes/YouTube Music 1.20.0-arm64/YouTube Music.app" /Applications
+          echo "Detaching" && sudo hdiutil detach "/Volumes/YouTube Music 1.20.0-arm64"
+        fi
+        echo "Removing /tmp/YouTube-Music.dmg" && rm -f /tmp/YouTube-Music.dmg
     winget: th-ch.YouTubeMusic
     yay: youtube-music-bin
   yq:
@@ -11251,7 +11287,8 @@ softwarePackages:
     choco: yubico-authenticator
     flatpak: com.yubico.yubioath
     mas: 1497506650
-    script:darwin: curl -sSL https://developers.yubico.com/yubioath-flutter/Releases/yubico-authenticator-latest-mac.dmg > "/tmp/Yubico Authenticator.dmg" && hdiutil attach "/tmp/Yubico Authenticator.dmg" &&  sudo cp -R "/Volumes/Yubico Authenticator/Yubico Authenticator.app" /Applications && sudo hdiutil detach "/Volumes/Yubico Authenticator" && rm -f "/tmp/Yubico Authenticator.dmg"
+    script:
+      darwin: curl -sSL https://developers.yubico.com/yubioath-flutter/Releases/yubico-authenticator-latest-mac.dmg > "/tmp/Yubico Authenticator.dmg" && hdiutil attach "/tmp/Yubico Authenticator.dmg" &&  sudo cp -R "/Volumes/Yubico Authenticator/Yubico Authenticator.app" /Applications && sudo hdiutil detach "/Volumes/Yubico Authenticator" && rm -f "/tmp/Yubico Authenticator.dmg"
   yubikey-manager:
     _bin: ykman
     _desc: "Cross-platform application for configuring any YubiKey over all USB interfaces."
@@ -11283,8 +11320,10 @@ softwarePackages:
     _home: https://zap.srev.in/
     _name: Zap
     _preload: true
-    binary:linux: https://github.com/srevinsaju/zap/releases/download/continuous/zap-amd64
-    script:linux: curl https://raw.githubusercontent.com/srevinsaju/zap/main/install.sh | sudo bash -s
+    binary:
+      linux: https://github.com/srevinsaju/zap/releases/download/continuous/zap-amd64
+    script:
+      linux: curl https://raw.githubusercontent.com/srevinsaju/zap/main/install.sh | sudo bash -s
   zaproxy:
     _app: ZAP.app
     _bin: zaproxy
@@ -11370,3 +11409,155 @@ softwarePackages:
     _preload: true
     brew: zx
     npm: zx
+  hyfetch:
+    _bin: hyfetch
+    _desc: "neofetch with pride flags <3"
+    _github: https://github.com/hykilpikonna/hyfetch
+    _name: hyfetch
+    pipx: hyfetch
+    pacman: hyfetch
+    dnf: hyfetch
+    nix-env: hyfetch
+    brew: hyfetch
+    zypper: hyfetch
+    apt: hyfetch
+    port: hyfetch
+    emerge: hyfetch
+  vesktop:
+    _bin: vesktop
+    _desc: >
+      Vesktop is a custom Discord App aiming to give you better performance and
+      improve linux support
+    _github: https://github.com/Vencord/Vesktop
+    _name: Vesktop
+    flatpak: dev.vencord.Vesktop
+    appimage: https://vencord.dev/download/vesktop/amd64/appimage
+    yay: vesktop-bin
+    scoop: extras/vesktop
+    dmg: https://vencord.dev/download/vesktop/universal/dmg
+    apt: https://vencord.dev/download/vesktop/amd64/deb
+    script:
+      darwin: >-
+        curl -sSL https://vencord.dev/download/vesktop/universal/dmg >
+        "/tmp/Vesktop.dmg"
+        && sudo hdiutil attach "/tmp/Vesktop.dmg"
+        && sudo cp -R "/Volumes/Vesktop 1.5.3-universal/Vesktop.app" /Applications
+        && sudo hdutil detach "/Volumes/Vesktop 1.5.3-universal"
+        && rm -rf "/tmp/Vesktop.dmg"
+  fish-shell:
+    _bin: fish
+    _desc: >
+      fish is a smart and user-friendly command line shell for Linux, macOS, and
+      the rest of the family.
+    _github: https://github.com/fish-shell/fish-shell
+    _home: https://fishshell.com/
+    _name: fish shell
+    brew: fish
+    port: fish
+    dnf: fish
+    pacman: fish
+    emerge: fish
+    nix-env: fish
+  rectangle:
+    _bin: null
+    _desc: "Move and resize windows using keyboard shortcuts or snap areas"
+    _home: https://rectangleapp.com/
+    _name: Rectangle
+    cask: rectangle
+  wezterm:
+    _bin: wezterm
+    _desc: >
+      WezTerm is a powerful cross-platform terminal emulator and multiplexer
+      written by @wez and implemented in Rust
+    _github: https://github.com/wez/wezterm
+    _home: https://wezfurlong.org/wezterm/
+    _name: WezTerm
+    winget: wez.wezterm
+    scoop: extras/wezterm
+    choco: wezterm
+    cask: wezterm
+    port: wezterm
+    appimage: wezterm
+    zypper: wezterm
+    pacman: wezterm
+  fantastical:
+    _bin: null
+    _desc: >
+      Fantastical, the calendar app you won't be able to live without.
+      Quickly create new events and reminders with natural language input and
+      more. Flexibits makes Fantastical and Cardhop, enjoyable calendar and
+      contacts apps for for Mac, iPhone, and iPad.
+    _github: false
+    _home: https://flexibits.com/fantastical
+    _name: Fantastical
+    cask: fantastical
+  cardhop:
+    _bin: null
+    _desc: >
+      Presenting Cardhop, the contacts app you'll actually want to use. Search,
+      add, edit, and interact with your contacts while still having fun.
+      Flexibits makes Fantastical and Cardhop, enjoyable calendar and contacts
+      apps for for Mac, iPhone, and iPad.
+    _github: false
+    _home: https://flexibits.com/cardhop
+    _name: Cardhop
+    cask: cardhop
+  btop:
+    _bin: btop
+    _desc: >
+      Resource monitor that shows usage and stats for processor, memory, disks,
+      network and processes.
+    _github: https://github.com/aristocratos/btop
+    _name: btop
+    dnf: btop
+    brew: btop
+    pacman: btop
+    port: btop
+    scoop: btop
+    apt: btop
+  httpie-desktop:
+    _bin: null
+    _desc: >
+      HTTPie Desktop is a cross-platform API testing client for humans. Use it
+      to test REST, GraphQL, and HTTP APIs painlessly.
+    _docs: https://httpie.io/docs/desktop/httpie-web
+    _github: https://github.com/httpie/desktop
+    _home: https://httpie.io/desktop
+    _name: HTTPie Desktop
+    cask: httpie
+    yay: httpie-desktop-bin
+    choco: httpie-desktop
+    appimage: https://github.com/httpie/desktop/releases/download/v2024.1.2/HTTPie-2024.1.2.AppImage
+    exe: https://github.com/httpie/desktop/releases/download/v2024.1.2/HTTPie-Setup-2024.1.2.exe
+  topgrade:
+    _bin: topgrade
+    _desc: "Upgrade all the things"
+    _github: https://github.com/topgrade-rs/topgrade
+    _name: topgrade
+    yay: topgrade-bin
+    choco: topgrade
+    cargo: topgrade
+    brew: topgrade
+    port: topgrade
+    scoop: topgrade
+  adium:
+    _bin: null
+    _app: Adium.app
+    _desc: >
+      Adium is an open source and free instant messaging application for macOS
+      that can connect to XMPP (Jabber), IRC and more.
+    _github: https://github.com/adium/adium
+    _home: https://adium.im/
+    _name: Adium
+    cask: adium
+  pidgin:
+    _bin: pidgin
+    _desc: >
+      Pidgin is a chat program which lets you log into accounts on multiple chat
+      networks simultaneously.
+    _home: https://pidgin.im/
+    _name: Pidgin
+    pacman: pidgin
+    choco: pidgin
+    apt: pidgin
+    dnf: pidgin
