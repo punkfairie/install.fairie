@@ -11425,7 +11425,7 @@ softwarePackages:
     emerge: hyfetch
   vesktop:
     _bin: vesktop
-    _desc: >
+    _desc: >-
       Vesktop is a custom Discord App aiming to give you better performance and
       improve linux support
     _github: https://github.com/Vencord/Vesktop
@@ -11437,7 +11437,7 @@ softwarePackages:
     dmg: https://vencord.dev/download/vesktop/universal/dmg
     apt: https://vencord.dev/download/vesktop/amd64/deb
     script:
-      darwin: >-
+      darwin: |
         curl -sSL https://vencord.dev/download/vesktop/universal/dmg >
         "/tmp/Vesktop.dmg"
         && sudo hdiutil attach "/tmp/Vesktop.dmg"
@@ -11446,7 +11446,7 @@ softwarePackages:
         && rm -rf "/tmp/Vesktop.dmg"
   fish-shell:
     _bin: fish
-    _desc: >
+    _desc: >-
       fish is a smart and user-friendly command line shell for Linux, macOS, and
       the rest of the family.
     _github: https://github.com/fish-shell/fish-shell
@@ -11466,7 +11466,7 @@ softwarePackages:
     cask: rectangle
   wezterm:
     _bin: wezterm
-    _desc: >
+    _desc: >-
       WezTerm is a powerful cross-platform terminal emulator and multiplexer
       written by @wez and implemented in Rust
     _github: https://github.com/wez/wezterm
@@ -11482,7 +11482,7 @@ softwarePackages:
     pacman: wezterm
   fantastical:
     _bin: null
-    _desc: >
+    _desc: >-
       Fantastical, the calendar app you won't be able to live without.
       Quickly create new events and reminders with natural language input and
       more. Flexibits makes Fantastical and Cardhop, enjoyable calendar and
@@ -11493,7 +11493,7 @@ softwarePackages:
     cask: fantastical
   cardhop:
     _bin: null
-    _desc: >
+    _desc: >-
       Presenting Cardhop, the contacts app you'll actually want to use. Search,
       add, edit, and interact with your contacts while still having fun.
       Flexibits makes Fantastical and Cardhop, enjoyable calendar and contacts
@@ -11504,7 +11504,7 @@ softwarePackages:
     cask: cardhop
   btop:
     _bin: btop
-    _desc: >
+    _desc: >-
       Resource monitor that shows usage and stats for processor, memory, disks,
       network and processes.
     _github: https://github.com/aristocratos/btop
@@ -11517,7 +11517,7 @@ softwarePackages:
     apt: btop
   httpie-desktop:
     _bin: null
-    _desc: >
+    _desc: >-
       HTTPie Desktop is a cross-platform API testing client for humans. Use it
       to test REST, GraphQL, and HTTP APIs painlessly.
     _docs: https://httpie.io/docs/desktop/httpie-web
@@ -11543,7 +11543,7 @@ softwarePackages:
   adium:
     _bin: null
     _app: Adium.app
-    _desc: >
+    _desc: >-
       Adium is an open source and free instant messaging application for macOS
       that can connect to XMPP (Jabber), IRC and more.
     _github: https://github.com/adium/adium
@@ -11552,7 +11552,7 @@ softwarePackages:
     cask: adium
   pidgin:
     _bin: pidgin
-    _desc: >
+    _desc: >-
       Pidgin is a chat program which lets you log into accounts on multiple chat
       networks simultaneously.
     _home: https://pidgin.im/
